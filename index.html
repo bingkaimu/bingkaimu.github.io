@@ -100,6 +100,23 @@ $(document).ready(function() {
 </select>
 	<input style="display: none;" id="temainput" type="file" onchange="readURL(this.value)">
 </fieldset>
+<script>	
+function readURL(input) {
+var url = input.value;
+var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+if (input.files && input.files[0]&& (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        $('#imgposterbcg').attr('src', e.target.result);
+    }
+    reader.readAsDataURL(input.files[0]);
+}
+else{
+     $('#imgposterbcg').attr('src', '/assets/no_preview.png');
+  }
+}
+</script>	
 <fieldset style="padding-left: auto; text-align: center;">
 <legend>Pilih Logo :</legend>
 	<select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
