@@ -96,7 +96,7 @@ $(document).ready(function() {
 	<option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-01.jpg">TEMA-01</option>
         <option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-02.jpg">TEMA-02</option>
         <option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-03.jpg">TEMA-03</option>
-	<option id="temaoption" onclick="document.getElementById('temainput').style.display  = 'block';">LAINNYA</option>    
+	<option onclick="document.getElementById('temainput').style.display  = 'block';">LAINNYA</option>    
 </select>
 	<input style="display: none;" id="temainput" type="file" accept="image/*" onchange="document.getElementById('imgposterbcg').src = window.URL.createObjectURL(this.files[0])">
 </fieldset>
@@ -105,21 +105,22 @@ $(document).ready(function() {
 <legend>Pilih Logo :</legend>
 	<select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
 	<option value="">Tanpa Logo</option>
-        <option value="/IMG/logoDKI.png.png">Logo DKI</option>
-        <option value="/IMG/tutwurih.png">Logo Tut Wuri</option>
-        <option value="/IMG/garuda.png">Garuda</option>
-        <option value="/IMG/512x512.png">Logo JP05</option>
-        <option value="/IMG/GARUDA-01.png">GARUDA-01</option>
-        <option value="/IMG/GARUDA-02.png">GARUDA-02</option>
-        <option value="/IMG/GARUDA-03.png">GARUDA-03</option>
-        <option value="/IMG/GARUDA-04.png">GARUDA-04</option>
-        <option value="/IMG/GARUDA-05.png">GARUDA-05</option>
-        <option value="/IMG/INDONESIA-01.png">INDONESIA-01</option>      
-        <option value="/IMG/INDONESIA-02.png">INDONESIA-02</option>            
-        <option value="/IMG/INDONESIA-03.png">INDONESIA-03</option>  
-        <option value="/IMG/INDONESIA-04.png">INDONESIA-04</option>  
-        <option value="/IMG/INDONESIA-05.png">INDONESIA-05</option>          
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/logoDKI.png.png">Logo DKI</option>
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/tutwurih.png">Logo Tut Wuri</option>
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/GARUDA-01.png">GARUDA-01</option>
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/GARUDA-03.png">GARUDA-02</option>
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/GARUDA-04.png">GARUDA-03</option>
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/GARUDA-05.png">GARUDA-04</option>
+	<option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/garuda.png">GARUDA-05</option>	
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-01.png">INDONESIA-01</option>      
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-02.png">INDONESIA-02</option>            
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-03.png">INDONESIA-03</option>  
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-04.png">INDONESIA-04</option>  
+        <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-05.png">INDONESIA-05</option>  
+	<option onclick="document.getElementById('logoinput').style.display  = 'block';">LAINNYA</option>    
 </select>
+	<input style="display: none;" id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
+
 <select name="posisilogo" list="posisilogo" onchange="Optionposisilogo();" class="mkb-input" value="" id="posisilogo">
         <option value="Atas">Atas</option>
         <option value="Bawah">Bawah</option>
