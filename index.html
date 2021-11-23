@@ -93,65 +93,12 @@ $(document).ready(function() {
 <fieldset style="padding-left: auto; text-align: center;">
 <legend>Pilih Tema :</legend>
     <select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
-	<optgroup label="CITY">
-        <option data-img_src="/IMG/CITY2.jpg" value="/IMG/CITY2.jpg">Kota 1</option>
-        <option data-img_src="/IMG/CITY3.jpg" value="/IMG/CITY3.jpg">Kota 2</option>
-        <option data-img_src="/IMG/CITY5.jpg" value="/IMG/CITY5.jpg">Kota 3</option>
-    </optgroup>
-    <optgroup label="FLORA">
-	<option value="/IMG/FLORA1.jpg">FLORA-1</option>
-	<option value="/IMG/FLORA3.jpg">FLORA-2</option>
-        <option value="/IMG/FLORA4.jpg">FLORA-3</option>
-    </optgroup>
-    <optgroup label="FAUNA">
-	<option value="/IMG/FAUNA1.jpg">FAUNA-1</option>
-	<option value="/IMG/FAUNA3.jpg">FAUNA-2</option>
- 	<option value="/IMG/FAUNA4.jpg">FAUNA-3</option>
-    </optgroup>    
-    <optgroup label="FOOD">
-	<option value="/IMG/FOOD1.jpg">FOOD-1</option>
-        <option value="/IMG/FOOD2.jpg">FOOD-2</option>
-        <option value="/IMG/FOOD3.jpg">FOOD-3</option>
-    </optgroup>
-    <optgroup label="HEALTH">
-	<option value="/IMG/HEALTH1.jpg">HEALTH-1</option>
-        <option value="/IMG/HEALTH2.jpg">HEALTH-2</option>
-        <option value="/IMG/HEALTH3.jpg">HEALTH-3</option>
-    </optgroup>
-    <optgroup label="MUSICS">
-	<option value="/IMG/MUSICS1.jpg">MUSICS-1</option>
-        <option value="/IMG/MUSICS2.jpg">MUSICS-2</option>
-        <option value="/IMG/MUSICS3.jpg">MUSICS-3</option>
-    </optgroup>
-    <optgroup label="NATURE">
-	<option value="/IMG/NATURE1.jpg">NATURE-1</option>
-        <option value="/IMG/NATURE2.jpg">NATURE-2</option>
-        <option value="/IMG/NATURE3.jpg">NATURE-3</option>
-    </optgroup>
-    <optgroup label="ART">
-	<option value="/IMG/BATIK-01.jpg">BATIK-01</option>
-        <option value="/IMG/BATIK-02.jpg">BATIK-02</option>
-        <option value="/IMG/BATIK-03.jpg">BATIK-03</option>
-    </optgroup>
-    <optgroup label="ABSTACT">
-	<option value="/IMG/ABSTAK-01.jpg">ABSTAK-01</option>
-        <option value="/IMG/ABSTAK-02.jpg">ABSTAK-02</option>
-        <option value="/IMG/ABSTAK-03.jpg">ABSTAK-03</option>
-    </optgroup>
-    <optgroup label="SPORT">
-	<option value="/IMG/SPORT-01.jpg">SPORT-01</option>
-        <option value="/IMG/SPORT-02.jpg">SPORT-02</option>
-        <option value="/IMG/SPORT-03.jpg">SPORT-03</option>
-    </optgroup>
-    <optgroup label="REVOLUTION">
-	<option value="/IMG/REVO-01.jpg">REVOLUTION-01</option>
-        <option value="/IMG/REVO-02.jpg">REVOLUTION-02</option>
-        <option value="/IMG/REVO-03.jpg">REVOLUTION-03</option>
-    </optgroup>   
-    <optgroup label="Lainnya">
-	<option value=""><input type="file"></option>	
-    </optgroup>	    
+	<option value="/IMG/ABSTAK-01.jpg">TEMA-01</option>
+        <option value="/IMG/ABSTAK-02.jpg">TEMA-02</option>
+        <option value="/IMG/ABSTAK-03.jpg">TEMA-03</option>
+	<option id="temaoption" onclick="document.getElementById('logoposter').style.width  = this.value;" value="">LAINNYA</option>    
 </select>
+	<input id=temainput" type="file" onchange="document.getElementById('imgposterbcg').src = this.value;">
 </fieldset>
 <fieldset style="padding-left: auto; text-align: center;">
 <legend>Pilih Logo :</legend>
