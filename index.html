@@ -93,9 +93,9 @@ $(document).ready(function() {
 <fieldset style="padding-left: auto; text-align: center;">
 <legend>Pilih Tema :</legend>
     <select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
-	<option value="/IMG/ABSTAK-01.jpg">TEMA-01</option>
-        <option value="/IMG/ABSTAK-02.jpg">TEMA-02</option>
-        <option value="/IMG/ABSTAK-03.jpg">TEMA-03</option>
+	<option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-01.jpg">TEMA-01</option>
+        <option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-02.jpg">TEMA-02</option>
+        <option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-03.jpg">TEMA-03</option>
 	<option id="temaoption" onclick="document.getElementById('temainput').style.display  = 'block';">LAINNYA</option>    
 </select>
 	<input style="display: none;" id="temainput" type="file" onchange="readURL(this.value)">
