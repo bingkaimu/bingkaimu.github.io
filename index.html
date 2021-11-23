@@ -39,6 +39,25 @@ $(document).ready(function() {
 
 
 <body style="background-color: transparent;">
+<script type="text/javascript">
+    function custom_template(obj){
+            var data = $(obj.element).data();
+            var text = $(obj.element).text();
+            if(data && data['img_src']){
+                img_src = data['img_src'];
+                template = $("<div><img src=\"" + img_src + "\" style=\"width:100%;height:150px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
+                return template;
+            }
+        }
+    var options = {
+        'templateSelection': custom_template,
+        'templateResult': custom_template,
+    }
+    $('#id_select2_example').select2(options);
+    $('.select2-container--default .select2-selection--single').css({'height': '220px'});
+
+</script>
+	
 <script src="/JS/SpryTabbedPanels.js"></script>	
 <center>
 <div style="display: block; position: relative; width: 100%;">
@@ -93,7 +112,7 @@ $(document).ready(function() {
 <legend>Pilih Tema :</legend>
     <select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
 	<optgroup label="CITY">
-        <option style="background-image:url(/IMG/CITY2.jpg);" value="/IMG/CITY2.jpg">Kota 1</option>
+        <option data-img_src="/IMG/CITY2.jpg" value="/IMG/CITY2.jpg">Kota 1</option>
         <option value="/IMG/CITY3.jpg"><img src="/IMG/CITY3.jpg" width="100" height="100"></option>
         <option value="/IMG/CITY5.jpg"><img src="/IMG/CITY5.jpg" width="100" height="100"></option>
     </optgroup>
