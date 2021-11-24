@@ -41,7 +41,7 @@ height: 300px;
 font-smoothing: always!important;
 text-shadow: 3px 3px 3px #000000!important;
 font-family: Arial, sans-serif;
-text-rendering: geometricPrecision;
+text-rendering: geometricPrecision;	
 }
 #backgroundposter {
 width: 300px; 
@@ -54,6 +54,7 @@ background-color: transparent!important;
 background-repeat: no-repeat!important;
 background-position: center center!important;
 border-radius: 20px!important;
+background-color: white;	
 }
 #textposter {
 width: 280px;	
