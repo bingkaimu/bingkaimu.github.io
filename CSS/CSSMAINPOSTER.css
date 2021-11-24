@@ -62,7 +62,7 @@ height : auto;
 font-size: 14px;
 font-weight: lighter;
 text-shadow: 0px 0px 15px #000000!important;
-white-space: pre;	
+white-space: pre-line;	
 }
 
 #judultposter, #textposterout {
@@ -73,7 +73,7 @@ font-smoothing: always!important;
 text-shadow: 0px 0px 5px #000000!important;
 font-family: Arial, sans-serif;
 top: 0px;
-white-space: pre;
+white-space: pre-line;
 left: 0px;
 background-color: transparent;
 height : 300px!important;;
@@ -85,7 +85,7 @@ width: 300px!important;
 position: absolute;
 padding: 0 10 0 10;
 background-color:rgb(0, 5, 6, .5);
-white-space:normal;
+white-space: pre-line;
 padding-left: 10px;
 padding-right: 10px;
 background-color: transparent;
@@ -97,7 +97,7 @@ height : auto;
 font-size: 26px;
 font-weight: bolder;
 text-shadow: 0px 0px 15px #000000!important;
-white-space: pre;	
+white-space: pre-line;	
 }
 #deskripsi{
 width: 280px;	
@@ -105,7 +105,7 @@ height : auto;
 font-size: 14px;
 font-weight: lighter!important;
 font-style: italic;
-white-space: pre;	
+white-space: pre-line;	
 }
 #imgposterbcg{
 width: 300px; 
