@@ -36,7 +36,6 @@ display: none;
 #html-content-holder {
 display: inline-block;
 position: relative;	
-background-color: transparent!important; 
 width: 300px; 
 height: 300px; 
 font-smoothing: always!important;
