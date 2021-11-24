@@ -111,6 +111,7 @@ Maskibow on PsyChoGrApIcs
 	
 <fieldset style="padding-left: auto; text-align: center;">
 <legend>Pilih Logo :</legend>
+<div style="display: block;">	
 <label>Pilih Logo :</label>
 <select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
 	<option value="">Tanpa Logo</option>
@@ -129,20 +130,26 @@ Maskibow on PsyChoGrApIcs
 	<option onclick="document.getElementById('logoinput').style.display  = 'block';">LAINNYA</option>    
 </select>
 	<input style="display: none;" id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
+</div>
+<div style="display: block;">
 <label>Posisi Logo :</label>
 <select name="posisilogo" list="posisilogo" onchange="Optionposisilogo();" class="mkb-input" value="" id="posisilogo">
         <option value="Atas">Atas</option>
         <option value="Bawah">Bawah</option>
 </select>
+</div>
+<div style="display: block;">	
 <label>Ukuran Logo :</label>	
 <select name="ukuranlogo" list="ukuranlogo" onchange="document.getElementById('logoposter').style.width  = this.value;" class="mkb-input" value="" id="ukuranlogo">
         <option value="100px">Normal</option>
         <option value="70px">Kecil</option>
         <option value="140px">Besar</option>
 </select>
+</div>
 </fieldset>
 <fieldset style="padding-left: auto; text-align: center;">
-<legend>Pilih Bingkai : </legend>  
+<legend>Pilih Bingkai : </legend> 
+<div style="display: block;">	
 <label>Model Bingkai :</label>	
  	<select name="Bingkaipilih" list="Bingkaipilih" onchange="document.getElementById('Bingkai').src = this.value;document.getElementById('Bingkaix').src = this.value;" class="mkb-input" value="" id="Bingkaipilih">
 	<option value="">Tanpa Bingkai</option>
@@ -174,12 +181,15 @@ Maskibow on PsyChoGrApIcs
         <option value="/IMG/RAMPLE-26.png">Bingkai-26</option>
         <option value="/IMG/RAMPLE-27.png">Bingkai-27</option>        
         </select>
+</div>
+<div style="display: block;">	
 <label>Pisisi Bingkai :</label>
 <select name="listbingkai" list="listbingkai" onchange="Optionlistbingkai();" class="mkb-input" value="" id="listbingkai">
         <option value="Bawah">Bawah</option>
         <option value="Atas">Atas</option>
         <option value="Atas-Bawah">Atas-Bawah</option>
-</select>        
+</select> 
+</div>
 </fieldset>        
 </div>    
     </div>
