@@ -62,6 +62,7 @@ height : auto;
 font-size: 14px;
 font-weight: lighter;
 text-shadow: 0px 0px 15px #000000!important;
+white-space: pre;	
 }
 
 #judultposter, #textposterout {
@@ -72,7 +73,7 @@ font-smoothing: always!important;
 text-shadow: 0px 0px 5px #000000!important;
 font-family: Arial, sans-serif;
 top: 0px;
-white-space:normal;
+white-space: pre;
 left: 0px;
 background-color: transparent;
 height : 300px!important;;
@@ -88,6 +89,7 @@ white-space:normal;
 padding-left: 10px;
 padding-right: 10px;
 background-color: transparent;
+white-space: pre;	
 }
 #judul{
 width: 280px;	
@@ -95,6 +97,7 @@ height : auto;
 font-size: 26px;
 font-weight: bolder;
 text-shadow: 0px 0px 15px #000000!important;
+white-space: pre;	
 }
 #deskripsi{
 width: 280px;	
@@ -102,6 +105,7 @@ height : auto;
 font-size: 14px;
 font-weight: lighter!important;
 font-style: italic;
+white-space: pre;	
 }
 #imgposterbcg{
 width: 300px; 
