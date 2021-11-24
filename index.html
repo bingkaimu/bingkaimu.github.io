@@ -111,7 +111,8 @@ Maskibow on PsyChoGrApIcs
 	
 <fieldset style="padding-left: auto; text-align: center;">
 <legend>Pilih Logo :</legend>
-	<select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
+<label>Pilih Logo :</label>
+<select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
 	<option value="">Tanpa Logo</option>
         <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/logoDKI.png.png">Logo DKI</option>
         <option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/tutwurih.png">Logo Tut Wuri</option>
@@ -128,11 +129,12 @@ Maskibow on PsyChoGrApIcs
 	<option onclick="document.getElementById('logoinput').style.display  = 'block';">LAINNYA</option>    
 </select>
 	<input style="display: none;" id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
-
+<label>Posisi Logo :</label>
 <select name="posisilogo" list="posisilogo" onchange="Optionposisilogo();" class="mkb-input" value="" id="posisilogo">
         <option value="Atas">Atas</option>
         <option value="Bawah">Bawah</option>
 </select>
+<label>Ukuran Logo :</label>	
 <select name="ukuranlogo" list="ukuranlogo" onchange="document.getElementById('logoposter').style.width  = this.value;" class="mkb-input" value="" id="ukuranlogo">
         <option value="100px">Normal</option>
         <option value="70px">Kecil</option>
@@ -140,7 +142,8 @@ Maskibow on PsyChoGrApIcs
 </select>
 </fieldset>
 <fieldset style="padding-left: auto; text-align: center;">
-<legend>Pilih Bingkai : </legend>     
+<legend>Pilih Bingkai : </legend>  
+<label>Model Bingkai :</label>	
  	<select name="Bingkaipilih" list="Bingkaipilih" onchange="document.getElementById('Bingkai').src = this.value;document.getElementById('Bingkaix').src = this.value;" class="mkb-input" value="" id="Bingkaipilih">
 	<option value="">Tanpa Bingkai</option>
         <option value="/IMG/RAMPLE-01.png">Bingkai-01</option>
@@ -165,13 +168,13 @@ Maskibow on PsyChoGrApIcs
         <option value="/IMG/RAMPLE-20.png">Bingkai-20</option>
         <option value="/IMG/RAMPLE-21.png">Bingkai-21</option>
         <option value="/IMG/RAMPLE-22.png">Bingkai-22</option>
-
         <option value="/IMG/RAMPLE-23.png">Bingkai-23</option>
         <option value="/IMG/RAMPLE-24.png">Bingkai-24</option>
         <option value="/IMG/RAMPLE-25.png">Bingkai-25</option>
         <option value="/IMG/RAMPLE-26.png">Bingkai-26</option>
         <option value="/IMG/RAMPLE-27.png">Bingkai-27</option>        
         </select>
+<label>Pisisi Bingkai :</label>
 <select name="listbingkai" list="listbingkai" onchange="Optionlistbingkai();" class="mkb-input" value="" id="listbingkai">
         <option value="Bawah">Bawah</option>
         <option value="Atas">Atas</option>
