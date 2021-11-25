@@ -1,10 +1,10 @@
-var APP_PREFIX = 'WebAppJp05_';
+var APP_PREFIX = 'App_PosterMu';
 var VERSION = 'version_01';
 var URLS = '.';
 
 const NOT_FOUND_CACHE_FILES = '/404.html';
-const CACHE_NAME = 'CACHE_OFFLINE_WEBAPP';
-const OFFLINE_URL = '/offline/index.html';
+const CACHE_NAME = 'CACHE_OFFLINE_APP_POSTERMU';
+const OFFLINE_URL = '/index.html';
 const NOT_FOUND_URL = '/404.html';
 
 self.addEventListener('fetch', function(event) {
@@ -34,10 +34,10 @@ self.addEventListener('fetch', function(event) {
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-const CACHE = "CACHE_OFFLINE_WEBAPP";
+const CACHE = "CACHE_OFFLINE_APP_POSTERMU";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "/offline/";
-const offlineFallbackPage = "https://webtama.github.io/WebAppJp05/offline/index.html";
+const offlineFallbackPage = "/index.html";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -142,7 +142,7 @@ workbox.routing.registerRoute(
     cacheName: HTML_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 100,
+        maxEntries: 20,
       }),
     ],
   })
@@ -154,7 +154,7 @@ workbox.routing.registerRoute(
     cacheName: JS_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 100,
+        maxEntries: 20,
       }),
     ],
   })
@@ -166,7 +166,7 @@ workbox.routing.registerRoute(
     cacheName: STYLE_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 100,
+        maxEntries: 20,
       }),
     ],
   })
@@ -178,7 +178,7 @@ workbox.routing.registerRoute(
     cacheName: IMAGE_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 200,
+        maxEntries: 20,
       }),
     ],
   })
@@ -190,7 +190,7 @@ workbox.routing.registerRoute(
     cacheName: ICON_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 200,
+        maxEntries: 20,
       }),
     ],
   })
@@ -202,7 +202,7 @@ workbox.routing.registerRoute(
     cacheName: IMAGE_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 200,
+        maxEntries: 20,
       }),
     ],
   })
@@ -214,7 +214,7 @@ workbox.routing.registerRoute(
     cacheName: JQUERY_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 200,
+        maxEntries: 20,
       }),
     ],
   })
@@ -226,7 +226,7 @@ workbox.routing.registerRoute(
     cacheName: SOUND_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 200,
+        maxEntries: 20,
       }),
     ],
   })
@@ -249,7 +249,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.CacheFirst({
     cacheName: CACHE,
     plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({statuses: [200]}),
+      new workbox.cacheableResponse.CacheableResponsePlugin({statuses: [20]}),
       new workbox.rangeRequests.RangeRequestsPlugin(),
     ],
   }),
