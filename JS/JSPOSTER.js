@@ -300,3 +300,43 @@ document.getElementById("Bingkai").style.display = "block";
 document.getElementById("Bingkaix").style.display = "block";
 };
 }
+
+function hideallsubs() {
+document.getElementById("submenu").style.display = "none"; 
+document.getElementById("subtema").style.display = "none"; 
+document.getElementById("sublogo").style.display = "none"; 
+document.getElementById("subframe").style.display = "none";
+document.getElementById("subfoto").style.display = "none"; 
+document.getElementById("subtitle").style.display = "none"; 
+document.getElementById("subnote").style.display = "none"; 
+document.getElementById("subhelp").style.display = "none"; 
+}
+
+function showSubmenu() {
+hideallsubs();
+document.getElementById("submenu").style.display = "block"; 
+}
+function showSubtema() {
+hideallsubs();
+document.getElementById("subtema").style.display = "block"; 
+}
+function showSublogo() {
+hideallsubs();
+document.getElementById("sublogo").style.display = "block"; 
+}
+function showSubfoto() {
+hideallsubs();
+document.getElementById("subframe").style.display = "block"; 
+}
+function showSubjudul() {
+hideallsubs();
+document.getElementById("subtitle").style.display = "block"; 
+}
+function showSubnote() {
+hideallsubs();
+document.getElementById("subnote").style.display = "block"; 
+}
+function showSubhelp() {
+hideallsubs();
+document.getElementById("subhelp").style.display = "block"; 
+}
