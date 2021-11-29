@@ -236,7 +236,6 @@ color: red;
 cursor: pointer;
 }
 .subs {
-display: none;
 background-color: #666666;
 color: white;
 padding: 10px;
@@ -244,11 +243,15 @@ text-align: center;
 border-radius: 20px 20px 0px 0px;
 position: absolute;
 bottom: 40px;
-width: calc(100vw - 20px);
-height: 0px;	
-left: 0px;
+width: calc(100vw - 20px);	
+left: 0px;	
+}
+#submenu, #subtema, #sublogo, #subframe, #subfoto, #subtitle, #subnote, #subhelp {
+display: none;
+height: 0px;
 z-index: 320!important;	
-transition: height 5s;	
+transition: all 5s;
+	
 }
 #mkb-group {
 display: block;
