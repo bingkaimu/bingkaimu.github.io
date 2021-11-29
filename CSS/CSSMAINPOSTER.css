@@ -202,3 +202,53 @@ color: white;
 display: none;
 font-family: Arial, sans-serif!important;	
 }
+
+body {
+background-image: url("/IMG/greenbcg.jpg");
+background-repeat: repeat;	
+}
+.material-icons {
+font-size:20px; 
+display:block; 
+color:#666666;
+}
+
+#settingposter{
+background-color:#000000; 
+color:#FFFFFF; 
+left:0px;
+position: fixed; 
+bottom: 0px; 
+width: 100%; 
+text-align: center; 
+font-size: 9px; 
+padding: auto;
+}
+#settingposter span{
+display: inline-block;
+text-align: center; 
+padding: 5px 10px 5px 10px;
+width:auto;
+}
+#settingposter span i:hover{
+color: red;
+cursor: pointer;
+}
+.subs {
+display: none;
+background-color: #666666;
+color: white;
+padding: 10px;
+text-align: center;
+bottom: 20px;
+border-radius: 20px 20px 0px 0px;
+position: absolute;
+bottom: 40px;
+width: calc(100vw - 20px);
+left: 0px;
+}
+#mkb-group {
+display: block;
+padding: 10px;
+}
+textarea {width: calc(100vw - 40px); display:block;}
