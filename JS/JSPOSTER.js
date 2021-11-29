@@ -24,6 +24,7 @@
 				anchorTag.click();
 			});
 	   document.getElementById("header").style.display = "block";
+	   document.getElementById("settingposter").style.display = "block";	    
 	   document.getElementById("backgroundposter").style.marginLeft = "0px";
 	   document.getElementById("backgroundposter").style.marginTop = "0px"; 
 	   document.getElementById("previewImg").style.width = "300px";    
