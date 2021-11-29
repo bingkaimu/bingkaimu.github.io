@@ -335,10 +335,15 @@ hideallsubs();
 document.getElementById("sublogo").style.display = "block"; 
 document.getElementById("sublogo").style.height = "auto"; 	
 }
-function showSubfoto() {
+function showSubframe() {
 hideallsubs();
 document.getElementById("subframe").style.display = "block"; 
 document.getElementById("subframe").style.height = "auto"; 
+}
+function showSubfoto() {
+hideallsubs();
+document.getElementById("subfoto").style.display = "block"; 
+document.getElementById("subfoto").style.height = "auto"; 
 }
 function showSubjudul() {
 hideallsubs();
