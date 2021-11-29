@@ -303,40 +303,55 @@ document.getElementById("Bingkaix").style.display = "block";
 
 function hideallsubs() {
 document.getElementById("submenu").style.display = "none"; 
+document.getElementById("submenu").style.height = "auto"; 	
 document.getElementById("subtema").style.display = "none"; 
+document.getElementById("subtema").style.height = "auto"; 	
 document.getElementById("sublogo").style.display = "none"; 
+document.getElementById("sublogo").style.height = "auto"; 	
 document.getElementById("subframe").style.display = "none";
+document.getElementById("subframe").style.height = "auto"; 	
 document.getElementById("subfoto").style.display = "none"; 
+document.getElementById("subfoto").style.height = "auto"; 	
 document.getElementById("subtitle").style.display = "none"; 
+document.getElementById("subtitle").style.height = "auto"; 	
 document.getElementById("subnote").style.display = "none"; 
+document.getElementById("subnote").style.height = "auto";	
 document.getElementById("subhelp").style.display = "none"; 
+document.getElementById("subhelp").style.height = "auto";	
 }
 
 function showSubmenu() {
 hideallsubs();
-document.getElementById("submenu").style.display = "block"; 
+document.getElementById("submenu").style.display = "block";
+document.getElementById("submenu").style.height = "auto"; 	
 }
 function showSubtema() {
 hideallsubs();
 document.getElementById("subtema").style.display = "block"; 
+document.getElementById("subtema").style.height = "auto"; 	
 }
 function showSublogo() {
 hideallsubs();
 document.getElementById("sublogo").style.display = "block"; 
+document.getElementById("sublogo").style.height = "auto"; 	
 }
 function showSubfoto() {
 hideallsubs();
 document.getElementById("subframe").style.display = "block"; 
+document.getElementById("subframe").style.height = "auto"; 
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.display = "block"; 
+document.getElementById("subtitle").style.display = "block";
+document.getElementById("subtitle").style.height = "auto"; 	
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.display = "block"; 
+document.getElementById("subnote").style.display = "block";
+document.getElementById("subnote").style.height = "auto"; 	
 }
 function showSubhelp() {
 hideallsubs();
 document.getElementById("subhelp").style.display = "block"; 
+document.getElementById("subhelp").style.height = "auto"; 	
 }
