@@ -223,6 +223,7 @@ width: 100%;
 text-align: center; 
 font-size: 9px; 
 padding: auto;
+z-index: 300;	
 }
 #settingposter span{
 display: inline-block;
