@@ -247,7 +247,6 @@ width: calc(100vw - 20px);
 left: 0px;	
 }
 #submenu, #subtema, #sublogo, #subframe, #subfoto, #subtitle, #subnote, #subhelp {
-display: none;
 height: 0px;
 z-index: 320!important;	
 transition: all 12s;
