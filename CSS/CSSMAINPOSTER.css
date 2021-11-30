@@ -238,12 +238,12 @@ color: red;
 cursor: pointer;
 }
 .subs {
-bottom: 40px;
+bottom: 30px;
 left: 0px;	
 }
 #subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {
 display: block;	
-height: calc(0px - 20px);
+height: 0px;
 width: calc(100vw - 20px);	
 position: fixed;	
 z-index: 310!important;	
