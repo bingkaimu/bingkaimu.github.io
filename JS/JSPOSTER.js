@@ -320,26 +320,26 @@ function showSubmenu() {
 
 function showSubtema() {
 hideallsubs();
-document.getElementById("subtema").style.height = "70%"; 
+document.getElementById("subtema").style.height = "200px"; 
 }
 
 function showSubframe() {
 hideallsubs();
-document.getElementById("subframe").style.height = "70%"; 
+document.getElementById("subframe").style.height = "100px"; 
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.height = "70%";
+document.getElementById("subfoto").style.height = "280px";
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.height = "70%"; 
+document.getElementById("subtitle").style.height = "280px"; 
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.height = "70%"; 
+document.getElementById("subnote").style.height = "250px"; 
 }
 function showSubsave() {
 hideallsubs();
-document.getElementById("subsave").style.height = "70%"; 
+document.getElementById("subsave").style.height = "80px"; 
 }
