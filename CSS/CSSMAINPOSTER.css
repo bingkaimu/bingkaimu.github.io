@@ -213,7 +213,7 @@ color:#666666;
 }
 
 #settingposter{
-background-color:rgb(0, 0, 139, 0.95);
+background-color:rgb(0, 0, 139);
 color:#FFFFFF; 
 left:0px;
 position: fixed; 
@@ -246,7 +246,7 @@ height: 0%;
 width: calc(100vw - 20px);	
 position: fixed;	
 z-index: 310!important;	
-transition: height 1s;
+transition: height 0.6s;
 background-color: rgb(255, 51, 0, 0.9);
 color: white;
 padding: 10px;
@@ -260,7 +260,7 @@ width: 300px;
 position: fixed;
 left: -300px; 	
 z-index: 320!important;	
-transition: left 1s;
+transition: left 0.6s;
 background-color: rgb(0, 0, 139, 0.8);
 color: black;
 text-align: left;
