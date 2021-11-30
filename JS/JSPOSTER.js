@@ -305,12 +305,12 @@ document.getElementById("Bingkaix").style.display = "block";
 
 function hideallsubs() {
 document.getElementById("submenu").style.left  = "-300px"; 	
-document.getElementById("subtema").style.height = "calc(0px - 20px)"; 	
-document.getElementById("subframe").style.height = "calc(0px - 20px)"; 	
-document.getElementById("subfoto").style.height = "-calc(0px - 20px)"; 	
-document.getElementById("subtitle").style.height = "calc(0px - 20px)"; 	
-document.getElementById("subnote").style.height = "calc(0px - 20px)";	
-document.getElementById("subsave").style.height = "calc(0px - 20px)";
+document.getElementById("subtema").style.height = "0px"; 	
+document.getElementById("subframe").style.height = "0px"; 	
+document.getElementById("subfoto").style.height = "0px"; 	
+document.getElementById("subtitle").style.height = "0px"; 	
+document.getElementById("subnote").style.height = "0px";	
+document.getElementById("subsave").style.height = "0px";
 }
 
 function showSubmenu() {
