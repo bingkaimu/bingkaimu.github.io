@@ -242,8 +242,7 @@ bottom: 40px;
 left: 0px;	
 }
 #subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {
-display: none;	
-height: auto;
+height: 0px;
 width: calc(100vw - 20px);	
 position: fixed;	
 z-index: 320!important;	
