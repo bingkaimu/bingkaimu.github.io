@@ -4,7 +4,7 @@
 	   document.getElementById("settingposter").style.display = "none";									    
 	   document.getElementById("logomaskibow").style.display = "block";
 	   document.getElementById("backgroundposter").style.marginLeft = "0px";
-	   document.getElementById("backgroundposter").style.marginTop = "0px";
+	   document.getElementById("backgroundposter").style.marginTop = "-80px";
 	   document.getElementById("previewImg").style.width = "300px";    
 	   document.getElementById("html-content-holder").style.height = "300px";
 	   document.getElementById("judulinner").style.lineHeight = "0.9";   
