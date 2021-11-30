@@ -247,7 +247,7 @@ width: calc(100vw - 20px);
 position: fixed;	
 z-index: 320!important;	
 transition: height 12s;
-background-color: #556B2F;
+background-color: rgb(107, 142, 35, 0.8);
 color: white;
 padding: 10px;
 text-align: center;
