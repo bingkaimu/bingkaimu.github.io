@@ -114,8 +114,7 @@ if ('serviceWorker' in navigator) {
 
 <div id="settingposter">
 	<span id="TabMenu" onclick="showSubmenu();" onmouseover="showSubmenu();"><i class="material-icons">menu</i>Menu</span>
-	<span id="TabTema" onclick="showSubtema();" onmouseover="showSubtema();"><i class="material-icons">image</i>Background</span>
-        <span id="TabLogo" onclick="showSublogo();" onmouseover="showSublogo();"><i class="material-icons">bubble_chart</i>Logo</span>
+	<span id="TabTema" onclick="showSubtema();" onmouseover="showSubtema();"><i class="material-icons">bubble_chart</i>Background</span>
 	<span id="TabFrame" onclick="showSubframe();" onmouseover="showSubframe();"><i class="material-icons">crop_original</i>Frame</span>
 	<span id="TabFoto" onclick="showSubfoto();" onmouseover="showSubfoto();"><i class="material-icons">add_a_photo</i>Foto</span>
 	<span id="TabJudul" onclick="showSubjudul();" onmouseover="showSubjudul();"><i class="material-icons">title</i> Title</span>
@@ -137,9 +136,7 @@ if ('serviceWorker' in navigator) {
 		</select>
 <input style="display: none;" id="temainput" type="file" accept="image/*" onchange="document.getElementById('imgposterbcg').src = window.URL.createObjectURL(this.files[0])">
 </div>
-</div>
-
-<div id="sublogo" class="subs">   
+  
 <div id="mkb-group">
 	<label>Pilih Logo :</label>
 		<select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
