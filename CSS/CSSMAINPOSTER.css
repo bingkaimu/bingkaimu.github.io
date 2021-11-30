@@ -266,6 +266,9 @@ padding: 20px;
 text-align: left;
 border-radius: 0px 20px 20px 0px;	
 }
+#header{
+border-radius: 0px 0px 200% 0px;
+}
 #mkb-group {
 display: block;
 padding: 10px;
