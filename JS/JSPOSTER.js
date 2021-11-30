@@ -314,11 +314,11 @@ document.getElementById("subsave").style.height = "0%";
 }
 
 function showSubmenu() {
-if (document.getElementById("submenu").style.left == "0px";) {
-  document.getElementById("submenu").style.left = "300px";
+if (document.getElementById("submenu").style.left == "-300px";) {
+  document.getElementById("submenu").style.left = "0px";
 } else {
   hideallsubs();	
-  document.getElementById("submenu").style.left = "0px";
+  document.getElementById("submenu").style.left = "-300px";
 }
 }	
 
