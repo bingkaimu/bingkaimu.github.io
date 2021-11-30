@@ -134,7 +134,8 @@ if ('serviceWorker' in navigator) {
 	</center>	
 </div>
 
-<div id="subtema" class="subs" onmouseout="hideallsubs();">   
+<div onmouseout="hideallsubs();"> 	
+<div id="subtema" class="subs">   
 <div id="mkb-group">
 	<label>Background :</label>
 		<select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
@@ -183,7 +184,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </div>
 
-<div id="subframe" class="subs" onmouseout="hideallsubs();">
+<div id="subframe" class="subs">
 <div id="mkb-group">
 	<label>Frame :</label>	
 		<select name="Bingkaipilih" list="Bingkaipilih" onchange="document.getElementById('Bingkai').src = this.value;document.getElementById('Bingkaix').src = this.value;" class="mkb-input" value="" id="Bingkaipilih">
@@ -227,7 +228,7 @@ if ('serviceWorker' in navigator) {
 </div>       
 </div>
 	
-<div id="subfoto" class="subs" onmouseout="hideallsubs();">
+<div id="subfoto" class="subs">
 <div id="mkb-group">
 	<label>Foto/Picture : </label>
 	<input type="file" id="getval" name="background-image" onchange="document.getElementById('imgposter').src = window.URL.createObjectURL(this.files[0])" class="mkb-input" accept="image/png, image/gif, image/jpeg" style="color:transparent; width:80px;"/>
@@ -270,7 +271,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </div>
 
-<div id="subtitle" class="subs" onmouseout="hideallsubs();"> 
+<div id="subtitle" class="subs"> 
 <div id="mkb-group">   
 	<label>Judul :</label>
 	<center>
@@ -331,7 +332,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </div>
 
-<div id="subnote" class="subs" onmouseout="hideallsubs();"> 
+<div id="subnote" class="subs"> 
 <div id="mkb-group">
     <label>✍ Tulis Nama/Komentar :</label>
    	<center>
@@ -406,10 +407,11 @@ if ('serviceWorker' in navigator) {
 
 </div>
 
-<div id="subsave" class="subs" onmouseout="hideallsubs();"> 
+<div id="subsave" class="subs"> 
 <input id="btn_convert" type="button" value="Save" class="mkb-button"/>	
 </div>
-
+</div>
+	
 <script type="text/javascript">
 <!--
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
