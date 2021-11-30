@@ -267,7 +267,7 @@ text-align: left;
 border-radius: 0px 20px 20px 0px;	
 }
 #header{
-border-radius: 0px 0px 200% 0px;
+border-radius: 50% 50% 50% 50%;
 background-color: black;
 }
 #mkb-group {
