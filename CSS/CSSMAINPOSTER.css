@@ -256,10 +256,11 @@ border-radius: 20px 20px 0px 0px;
 }
 #submenu {
 height: calc(100% - 40px);
-width: 0px;	
-position: fixed;	
+width: 300px;	
+position: fixed;
+left: -300px; 	
 z-index: 320!important;	
-transition: width 12s;
+transition: width 6s;
 background-color: rgb(0, 0, 139, 0.8);
 color: black;
 text-align: left;
