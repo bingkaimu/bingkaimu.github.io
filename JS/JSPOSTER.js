@@ -303,7 +303,7 @@ document.getElementById("Bingkaix").style.display = "block";
 }
 
 function hideallsubs() {
-document.getElementById("submenu").style.height = "0px"; 	
+document.getElementById("submenu").style.width = "0px"; 	
 document.getElementById("subtema").style.height = "0px"; 	
 document.getElementById("subframe").style.height = "0px"; 	
 document.getElementById("subfoto").style.height = "0px"; 	
@@ -322,7 +322,7 @@ document.getElementById("subsave").style.display = "none";
 function showSubmenu() {
 hideallsubs();
 document.getElementById("submenu").style.display = "block"; 	
-document.getElementById("submenu").style.height = "auto";
+document.getElementById("submenu").style.width = "300px";
 setTimeout(hideallsubs, 22000);	
 }
 function showSubtema() {
