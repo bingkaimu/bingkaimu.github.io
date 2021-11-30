@@ -310,38 +310,62 @@ document.getElementById("subframe").style.height = "0px";
 document.getElementById("subfoto").style.height = "0px"; 	
 document.getElementById("subtitle").style.height = "0px"; 	
 document.getElementById("subnote").style.height = "0px";	
-document.getElementById("subhelp").style.height = "0px";	
+document.getElementById("subhelp").style.height = "0px";
+document.getElementById("submenu").style.display = "none"; 	
+document.getElementById("subtema").style.display = "none"; 	
+document.getElementById("sublogo").style.display = "none"; 	
+document.getElementById("subframe").style.display = "none"; 	
+document.getElementById("subfoto").style.display = "none"; 	
+document.getElementById("subtitle").style.display = "none"; 	
+document.getElementById("subnote").style.display = "none";	
+document.getElementById("subhelp").style.display = "none";	
 }
 
 function showSubmenu() {
 hideallsubs();
-document.getElementById("submenu").style.height = "auto"; 	
+document.getElementById("submenu").style.display = "block"; 	
+document.getElementById("submenu").style.height = "auto";
+setTimeout(hideallsubs, 3000);	
 }
 function showSubtema() {
 hideallsubs();
-document.getElementById("subtema").style.height = "auto"; 	
+document.getElementById("subtema").style.display = "block";	
+document.getElementById("subtema").style.height = "auto"; 
+setTimeout(hideallsubs, 3000);		
 }
 function showSublogo() {
 hideallsubs();
-document.getElementById("sublogo").style.height = "auto"; 	
+document.getElementById("sublogo").style.display = "block";	
+document.getElementById("sublogo").style.height = "auto"; 
+setTimeout(hideallsubs, 3000);		
 }
 function showSubframe() {
 hideallsubs();
+document.getElementById("subframe").style.display = "block";	
 document.getElementById("subframe").style.height = "auto"; 
+setTimeout(hideallsubs, 3000);		
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.height = "auto"; 
+document.getElementById("subfoto").style.display = "block";	
+document.getElementById("subfoto").style.height = "auto";
+setTimeout(hideallsubs, 3000);		
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.height = "auto"; 	
+document.getElementById("subtitle").style.display = "block";	
+document.getElementById("subtitle").style.height = "auto"; 
+setTimeout(hideallsubs, 3000);		
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.height = "auto"; 	
+document.getElementById("subnote").style.display = "block";	
+document.getElementById("subnote").style.height = "auto"; 
+setTimeout(hideallsubs, 3000);		
 }
 function showSubhelp() {
 hideallsubs();
-document.getElementById("subhelp").style.height = "auto"; 	
+document.getElementById("subhelp").style.display = "block";	
+document.getElementById("subhelp").style.height = "auto"; 
+setTimeout(hideallsubs, 3000);		
 }
