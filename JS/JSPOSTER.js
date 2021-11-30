@@ -320,12 +320,12 @@ function showSubmenu() {
 
 function showSubtema() {
 hideallsubs();
-document.getElementById("subtema").style.height = "200px"; 
+document.getElementById("subtema").style.height = "220px"; 
 }
 
 function showSubframe() {
 hideallsubs();
-document.getElementById("subframe").style.height = "100px"; 
+document.getElementById("subframe").style.height = "150px"; 
 }
 function showSubfoto() {
 hideallsubs();
