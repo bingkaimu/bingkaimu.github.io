@@ -246,7 +246,7 @@ display: block;
 height: 0px;
 width: calc(100vw - 20px);	
 position: fixed;	
-z-index: 320!important;	
+z-index: 310!important;	
 transition: height 3s;
 background-color: rgb(107, 142, 35, 0.9);
 color: white;
