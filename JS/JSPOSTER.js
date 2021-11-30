@@ -311,12 +311,6 @@ document.getElementById("subfoto").style.height = "0px";
 document.getElementById("subtitle").style.height = "0px"; 	
 document.getElementById("subnote").style.height = "0px";	
 document.getElementById("subsave").style.height = "0px";
-document.getElementById("subtema").style.display = "none"; 	
-document.getElementById("subframe").style.display = "none"; 	
-document.getElementById("subfoto").style.display = "none"; 	
-document.getElementById("subtitle").style.display = "none"; 	
-document.getElementById("subnote").style.display = "none";	
-document.getElementById("subsave").style.display = "none";	
 }
 
 function showSubmenu() {
@@ -325,32 +319,26 @@ document.getElementById("submenu").style.left = "0px";
 }
 function showSubtema() {
 hideallsubs();
-document.getElementById("subtema").style.display = "block";	
 document.getElementById("subtema").style.height = "auto"; 
 }
 
 function showSubframe() {
 hideallsubs();
-document.getElementById("subframe").style.display = "block";	
 document.getElementById("subframe").style.height = "auto"; 
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.display = "block";	
 document.getElementById("subfoto").style.height = "auto";
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.display = "block";	
 document.getElementById("subtitle").style.height = "auto"; 
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.display = "block";	
 document.getElementById("subnote").style.height = "auto"; 
 }
 function showSubsave() {
 hideallsubs();
-document.getElementById("subsave").style.display = "block";	
 document.getElementById("subsave").style.height = "auto"; 
 }
