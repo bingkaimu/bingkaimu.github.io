@@ -255,13 +255,13 @@ border-radius: 20px 20px 0px 0px;
 }
 #submenu {
 display: none;
-height: 100vh;
+height: calc(100vh - 40px);
 width: 0px;	
 position: fixed;	
 z-index: 320!important;	
 transition: height 12s;
-background-color: #556B2F;
-color: white;
+background-color: orange;
+color: black;
 padding: 20px;
 text-align: left;
 border-radius: 0px 20px 20px 0px;	
