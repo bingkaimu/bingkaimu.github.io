@@ -224,7 +224,7 @@ font-size: 9px;
 padding: auto;
 z-index: 320!important;
 display: block;	
-height: 40px;	
+height: 50px;	
 }
 #settingposter span{
 display: inline-block;
@@ -238,7 +238,7 @@ color: red;
 cursor: pointer;
 }
 .subs {
-bottom: 20px;
+bottom: 30px;
 left: 0px;	
 }
 #subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {
@@ -255,7 +255,7 @@ text-align: center;
 border-radius: 20px 20px 0px 0px;	
 }
 #submenu {
-bottom: 40px;	
+bottom: 50px;	
 height: calc(100% - 40px);
 width: 300px;	
 position: fixed;
