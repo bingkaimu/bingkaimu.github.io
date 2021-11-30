@@ -1,10 +1,10 @@
 // JavaScript Document Maskibow on PsychoGrapics
        document.getElementById("btn_convert").addEventListener("click", function() {
-	   document.getElementById("header").style.display = "none";
+	   document.getElementById("subs").style.display = "none";
 	   document.getElementById("settingposter").style.display = "none";									    
 	   document.getElementById("logomaskibow").style.display = "block";
 	   document.getElementById("backgroundposter").style.marginLeft = "0px";
-	   document.getElementById("backgroundposter").style.marginTop = "-80px";
+	   document.getElementById("backgroundposter").style.marginTop = "0px";
 	   document.getElementById("previewImg").style.width = "300px";    
 	   document.getElementById("html-content-holder").style.height = "300px";
 	   document.getElementById("judulinner").style.lineHeight = "0.9";   
@@ -23,7 +23,7 @@
 				anchorTag.target = '_blank';
 				anchorTag.click();
 			});
-	   document.getElementById("header").style.display = "block";
+	   document.getElementById("subs").style.display = "block";
 	   document.getElementById("settingposter").style.display = "block";	    
 	   document.getElementById("backgroundposter").style.marginLeft = "0px";
 	   document.getElementById("backgroundposter").style.marginTop = "0px"; 
