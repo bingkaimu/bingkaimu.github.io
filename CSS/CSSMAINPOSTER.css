@@ -241,7 +241,6 @@ color: white;
 padding: 10px;
 text-align: center;
 border-radius: 20px 20px 0px 0px;
-position: fixed;
 bottom: 35px;
 width: calc(100vw - 20px);	
 left: 0px;	
@@ -249,6 +248,7 @@ left: 0px;
 #submenu, #subtema, #sublogo, #subframe, #subfoto, #subtitle, #subnote, #subhelp {
 display: none;	
 height: auto;
+position: fixed;	
 z-index: 320!important;	
 transition: height 12s;
 	
