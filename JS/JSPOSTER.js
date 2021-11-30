@@ -329,15 +329,15 @@ document.getElementById("subframe").style.height = "150px";
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.height = "280px";
+document.getElementById("subfoto").style.height = "320px";
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.height = "280px"; 
+document.getElementById("subtitle").style.height = "360px"; 
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.height = "250px"; 
+document.getElementById("subnote").style.height = "350px"; 
 }
 function showSubsave() {
 hideallsubs();
