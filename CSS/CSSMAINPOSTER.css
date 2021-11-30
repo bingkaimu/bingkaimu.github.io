@@ -231,6 +231,7 @@ display: inline-block;
 text-align: center; 
 padding: 5px 10px 5px 10px;
 width:auto;
+cursor: pointer;	
 }
 #settingposter span i:hover, #settingposter span i:select{
 color: red;
