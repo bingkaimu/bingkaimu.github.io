@@ -69,7 +69,13 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>  
-	
+<script>
+$(document).ready(function(){
+  $("#hideallsubs").mouseout(function(){
+    $("#hideallsubs").hideallsubs();
+  });
+});
+</script>	
 </head>
 
 <body >
@@ -112,7 +118,7 @@ if ('serviceWorker' in navigator) {
 </div>
 <div id="previewImg" class="previewImg"></div>
 	
-<div onmouseout="hideallsubs();"> 
+<div id="hideallsubs"> 
 <div id="settingposter">
 	<span id="TabMenu" onclick="showSubmenu();" style="color: orange;"><i class="material-icons" style="color: orange;">menu</i>Menu</span>
 	<span id="TabTema" onclick="showSubtema();"><i class="material-icons">bubble_chart</i>Background</span>
