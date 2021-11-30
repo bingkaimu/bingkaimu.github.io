@@ -239,6 +239,7 @@ color: red;
 cursor: pointer;
 }
 #subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {
+vertical-align:middle;	
 bottom: 0px;
 left: 0px;	
 display: block;	
