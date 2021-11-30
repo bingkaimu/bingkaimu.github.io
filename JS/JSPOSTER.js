@@ -356,7 +356,7 @@ document.getElementById("subnote").style.display = "block";
 document.getElementById("subnote").style.height = "auto"; 
 setTimeout(hideallsubs, 12000);		
 }
-function showSubhelp() {
+function showSubsave() {
 hideallsubs();
 document.getElementById("subsave").style.display = "block";	
 document.getElementById("subsave").style.height = "auto"; 
