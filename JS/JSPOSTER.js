@@ -305,12 +305,12 @@ document.getElementById("Bingkaix").style.display = "block";
 
 function hideallsubs() {
 document.getElementById("submenu").style.left  = "-300px"; 	
-document.getElementById("subtema").style.height = "0px"; 	
-document.getElementById("subframe").style.height = "0px"; 	
-document.getElementById("subfoto").style.height = "0px"; 	
-document.getElementById("subtitle").style.height = "0px"; 	
-document.getElementById("subnote").style.height = "0px";	
-document.getElementById("subsave").style.height = "0px";
+document.getElementById("subtema").style.height = "-10px"; 	
+document.getElementById("subframe").style.height = "-10px"; 	
+document.getElementById("subfoto").style.height = "-10px"; 	
+document.getElementById("subtitle").style.height = "-10px"; 	
+document.getElementById("subnote").style.height = "-10px";	
+document.getElementById("subsave").style.height = "-10px";
 }
 
 function showSubmenu() {
@@ -319,26 +319,26 @@ document.getElementById("submenu").style.left = "0px";
 }
 function showSubtema() {
 hideallsubs();
-document.getElementById("subtema").style.height = "50vh"; 
+document.getElementById("subtema").style.height = "auto"; 
 }
 
 function showSubframe() {
 hideallsubs();
-document.getElementById("subframe").style.height = "50vh"; 
+document.getElementById("subframe").style.height = "auto"; 
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.height = "50vh";
+document.getElementById("subfoto").style.height = "auto";
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.height = "50vh"; 
+document.getElementById("subtitle").style.height = "auto"; 
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.height = "50vh"; 
+document.getElementById("subnote").style.height = "auto"; 
 }
 function showSubsave() {
 hideallsubs();
-document.getElementById("subsave").style.height = "50vh"; 
+document.getElementById("subsave").style.height = "auto"; 
 }
