@@ -74,8 +74,8 @@ if ('serviceWorker' in navigator) {
 
 <body >
 <center style="color: white;" id="header" onclick="hideallsubs();">
-<img style="height: 100px; display: block; margin-top: 30px;" src="/ICON/152_px.png"/>
-<h1 style="font-size:20px;" >Poster Mu</h1>
+<img style="height: 100px; display: inline-block; margin-top: 30px;" src="/ICON/152_px.png"/>
+<h1 style="font-size:20px; display: inline-block;" >Poster Mu</h1>
 </center>	
 
 <center>
@@ -239,13 +239,13 @@ if ('serviceWorker' in navigator) {
 </div>
 <div id="mkb-group">
 	<label>Frame Shadow :</label>
-		<label for="vehicle1">Atas : </label>
+		<label for="vehicle1" style="display: block;">Atas : </label>
 		 	<input type="checkbox" id="checkshadowatas" onclick="OptionFrameShadowatas();" name="checkshadowatas" class="checkin"><br />
-		<label for="vehicle1">Bawah : </label>
+		<label for="vehicle1" style="display: inline-block;">Bawah : </label>
 			<input type="checkbox" id="checkshadowbawah" onclick="OptionFrameShadowbawah();" name="checkshadowbawah" class="checkin"><br />
-		<label for="vehicle2">Kanan : </label>
+		<label for="vehicle2" style="display: block;">Kanan : </label>
 			<input type="checkbox" id="checkshadowkiri" onclick="OptionFrameShadowkiri();" name="checkshadowkiri" class="checkin"><br />
-		<label for="vehicle3">Kiri : </label>
+		<label for="vehicle3" style="display: inline-block;">Kiri : </label>
 			<input type="checkbox" id="checkshadowkanan" onclick="OptionFrameShadowkanan();" name="checkshadowkanan" class="checkin">
 </div>
 <div id="mkb-group">
@@ -270,8 +270,7 @@ if ('serviceWorker' in navigator) {
             <option value="Bawah">Bawah</option>
             <option value="Atas">Atas</option>
         </select> 
-</div>
-<div id="mkb-group">
+
     <label>Ξ :</label>
         <select id="PosisiHurufAlignJudul" onchange="OptionPosisiAlignJudul();" name="PosisiHurufAlignJudul" value="" required style="width: 70px; display:inline;">
             <option value="Tengah">Tengah</option>
@@ -307,8 +306,7 @@ if ('serviceWorker' in navigator) {
             <option style="font-family: Black And White Picture;">Black And White Picture</option>	
             <option style="font-family: OCR A Std;">OCR A Std</option>
         </select> 
-</div>
-<div id="mkb-group">
+
     <label>🚥 :</label>
         <input id="colortextJudul" value="#ffffff" type="color" style="width: 70px; display:inline;" class="mkb-input"  onchange="GettcolorPosterJudul();"> 
 </div>
@@ -326,8 +324,7 @@ if ('serviceWorker' in navigator) {
             <option value="Normal">Normal</option>
             <option value="Besar">Besar</option>
         </select>
-</div>
-<div id="mkb-group">
+
     <label>⯐ :</label>
         <select id="PosisiHuruf" onchange="OptionPosisiHuruf();" name="PosisiHuruf" value="" required style="width: 70px; display:inline;">
             <option value="Bawah">Bawah</option>
@@ -343,8 +340,7 @@ if ('serviceWorker' in navigator) {
             <option value="Kanan">Kanan</option>
             <option value="Kiri">Kiri</option>
         </select>
-</div>
-<div id="mkb-group">
+
     <label>✎ :</label>
         <select id="GayaHuruf" onchange="OptionFonts(this);" name="GayaHuruf" value="" required style="width: 70px; display:inline;">
             <option style="font-family: Concert+One;">Concert One</option>
@@ -382,9 +378,7 @@ if ('serviceWorker' in navigator) {
             <option>bold</option>
             <option>bolder</option>
         </select> 
-</div>
 
-<div id="mkb-group">
     <label>🚥 :</label>
    		 <input id="colortext" value="#ffffff" type="color" style="width: 70px; display:inline;" class="mkb-input"  onchange="GettcolorPoster();"> 
 </div>
