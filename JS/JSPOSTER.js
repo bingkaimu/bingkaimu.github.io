@@ -321,7 +321,7 @@ document.getElementById("subsave").style.display = "none";
 
 function showSubmenu() {
 hideallsubs();
-document.getElementById("submenu").style.left = "300px";
+document.getElementById("submenu").style.left = "0px";
 }
 function showSubtema() {
 hideallsubs();
