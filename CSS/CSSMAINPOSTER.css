@@ -232,7 +232,7 @@ text-align: center;
 padding: 5px 10px 5px 10px;
 width:auto;
 }
-#settingposter span i:hover, #settingposter span i:onselect{
+#settingposter span i:hover, #settingposter span i:select{
 color: red;
 cursor: pointer;
 }
