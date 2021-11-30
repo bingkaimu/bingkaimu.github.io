@@ -304,7 +304,7 @@ document.getElementById("Bingkaix").style.display = "block";
 }
 
 function hideallsubs() {
-document.getElementById("submenu").style.width = "0px"; 	
+document.getElementById("submenu").style.left  = "-300px"; 	
 document.getElementById("subtema").style.height = "0px"; 	
 document.getElementById("subframe").style.height = "0px"; 	
 document.getElementById("subfoto").style.height = "0px"; 	
@@ -321,7 +321,7 @@ document.getElementById("subsave").style.display = "none";
 
 function showSubmenu() {
 hideallsubs();
-document.getElementById("submenu").style.width = "300px";
+document.getElementById("submenu").style.left = "300px";
 }
 function showSubtema() {
 hideallsubs();
