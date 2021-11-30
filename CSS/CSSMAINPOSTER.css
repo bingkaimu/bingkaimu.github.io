@@ -260,7 +260,7 @@ width: 0px;
 position: fixed;	
 z-index: 320!important;	
 transition: height 12s;
-background-color: orange;
+background-color: rgb(255, 165, 0, 0.6)
 color: black;
 padding: 20px;
 text-align: left;
