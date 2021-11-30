@@ -224,6 +224,7 @@ font-size: 9px;
 padding: auto;
 z-index: 320!important;
 display: block;	
+height: 40px;	
 }
 #settingposter span{
 display: inline-block;
@@ -241,7 +242,7 @@ color: white;
 padding: 10px;
 text-align: center;
 border-radius: 20px 20px 0px 0px;
-bottom: 35px;
+bottom: 40px;
 width: calc(100vw - 20px);	
 left: 0px;	
 }
