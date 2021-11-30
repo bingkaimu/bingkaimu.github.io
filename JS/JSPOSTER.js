@@ -314,7 +314,7 @@ document.getElementById("subsave").style.height = "0%";
 }
 
 function showSubmenu() {
-if (document.getElementById("submenu").left == "0px";) {
+if (document.getElementById("submenu").style.left == "0px";) {
   document.getElementById("submenu").style.left = "300px";
 } else {
   hideallsubs();	
