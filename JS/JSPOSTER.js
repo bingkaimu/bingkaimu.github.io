@@ -329,11 +329,11 @@ document.getElementById("subframe").style.height = "150px";
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.height = "320px";
+document.getElementById("subfoto").style.height = "340px";
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.height = "360px"; 
+document.getElementById("subtitle").style.height = "420px"; 
 }
 function showSubnote() {
 hideallsubs();
