@@ -314,8 +314,13 @@ document.getElementById("subsave").style.height = "0%";
 }
 
 function showSubmenu() {
-hideallsubs();	
-document.getElementById("submenu").style.left = "0px";	
+  if(window.getComputedStyle(document.getElementById("submenu"), null).left === -300px) {
+	hideallsubs();	
+	document.getElementById("submenu").style.left = "0px";	
+  } else {
+    	hideallsubs();	
+	document.getElementById("submenu").style.left = "-300px";
+  } 
 }
 
 function showSubtema() {
