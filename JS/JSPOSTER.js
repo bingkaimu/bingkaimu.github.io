@@ -347,18 +347,14 @@ document.getElementById("subsave").style.height = "80px";
 function juduloff() {
 document.getElementById("judulposter").style.display = 'none';	
 document.getElementById("descposter").style.display = 'none';
-document.getElementById("PosisiHurufJudul").style.display = 'none';
-document.getElementById("PosisiHurufAlignJudul").style.display = 'none';
-document.getElementById("GayaHurufJudul").style.display = 'none';		
-document.getElementById("colortextJudul").style.display = 'none';	
+document.getElementById("mkb-group ta01").style.display = 'none';
+document.getElementById("mkb-group ta02").style.display = 'none';
 }
 function judulon() {
 document.getElementById("judulposter").style.display = 'block';	
 document.getElementById("descposter").style.display = 'block';
-document.getElementById("PosisiHurufJudul").style.display = 'inline-block';
-document.getElementById("PosisiHurufAlignJudul").style.display = 'inline-block';
-document.getElementById("GayaHurufJudul").style.display = 'inline-block';		
-document.getElementById("colortextJudul").style.display = 'inline-block';	
+document.getElementById("mkb-group ta01").style.display = 'block';
+document.getElementById("mkb-group ta02").style.display = 'block';	
 }
 function tajudulon() {
 juduloff();
