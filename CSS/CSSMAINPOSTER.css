@@ -281,4 +281,4 @@ display: block;
 padding: 10px;
 }
 textarea {width: calc(100vw - 50px); display:block;}
-#logoinput, #temainput {display: none;}
+#logoinput, #temainput {dvisibility: hidden;}
