@@ -7,7 +7,7 @@
  "scope": ".",
  "dir": "ltr",
  "theme_color": "#000000",
- "background_color": "#000000",
+ "background_color": "#DCDCDC",
  "display": "standalone",
  "orientation": "portrait",
  "prefer_related_applications": "false",
