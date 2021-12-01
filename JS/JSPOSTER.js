@@ -315,40 +315,33 @@ document.getElementById("subsave").style.height = "0%";
 
 function showSubmenu() {
 hideallsubs();	
-document.getElementById("submenu").style.left = "0px";
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("submenu").style.left = "0px";	
 }
 
 function showSubtema() {
 hideallsubs();
-document.getElementById("subtema").style.height = "220px"; 
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("subtema").style.height = "220px"; 	
 }
 
 function showSubframe() {
 hideallsubs();
-document.getElementById("subframe").style.height = "150px"; 
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("subframe").style.height = "150px"; 	
 }
 function showSubfoto() {
 hideallsubs();
-document.getElementById("subfoto").style.height = "340px";
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("subfoto").style.height = "340px";	
 }
 function showSubjudul() {
 hideallsubs();
-document.getElementById("subtitle").style.height = "420px"; 
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("subtitle").style.height = "420px"; 	
 }
 function showSubnote() {
 hideallsubs();
-document.getElementById("subnote").style.height = "350px"; 
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("subnote").style.height = "350px"; 	
 }
 function showSubsave() {
 hideallsubs();
-document.getElementById("subsave").style.height = "80px";
-setTimeout(hideallsubs(), 6000);	
+document.getElementById("subsave").style.height = "80px";	
 }
 
 function juduloff() {
