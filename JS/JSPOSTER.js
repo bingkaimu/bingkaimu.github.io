@@ -1,5 +1,5 @@
 // JavaScript Document Maskibow on PsychoGrapics
-       document.getElementById("btn_convert").addEventListener("click", function() {
+       document.getElementById("TabHelp").addEventListener("click", function() {
 	   hideallsubs();    
 	   document.getElementById("headerpage").style.display = "none";
 	   document.getElementById("settingposter").style.display = "none";									    
