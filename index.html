@@ -193,7 +193,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 				<option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-01.jpg">TEMA-01</option>
 				<option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-02.jpg">TEMA-02</option>
 				<option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-03.jpg">TEMA-03</option>
-				<option onclick="document.getElementById('temainput').style.display  = 'block';">Other</option>    
+				<option onclick="document.getElementById('temainput').style.visibility   = 'visible';">Other</option>    
 		</select>
 <input id="temainput" type="file" accept="image/*" onchange="document.getElementById('imgposterbcg').src = window.URL.createObjectURL(this.files[0])">
 </div>
@@ -214,7 +214,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 				<option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-03.png">INDONESIA-03</option>  
 				<option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-04.png">INDONESIA-04</option>  
 				<option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-05.png">INDONESIA-05</option>  
-				<option onclick="document.getElementById('logoinput').style.display  = 'block';">LAINNYA</option>    
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'visible';">LAINNYA</option>    
 		</select>
 <input id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
 </div> 
