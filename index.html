@@ -176,7 +176,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     	<span id="TabHelp"><i class="material-icons">file_download</i>Save</span>
 </div>
 
-<div id="submenu" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);"> 
+<div id="submenu" class="subs"> 
 	<center style="color: white;" id="header" onclick="hideallsubs();">
 		<img style="height: 100px; padding-top: 30px;" src="/ICON/152_px.png"/>
 		<h1 style="-webkit-text-stroke: 0.5px black; margin-top: -50px; color: white; font-size: 58px; font-family: Henny Penny;" >Poster Mu</h1>
@@ -188,7 +188,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 	</center>	
 </div>
 
-<div id="subtema" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);">   
+<div id="subtema" class="subs">   
 <div id="mkb-group">
 	<label>Background :</label>
 		<select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
@@ -237,7 +237,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 </div>
 </div>
 
-<div id="subframe" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);">
+<div id="subframe" class="subs">
 <div id="mkb-group">
 	<label>Frame :</label>	
 		<select name="Bingkaipilih" list="Bingkaipilih" onchange="document.getElementById('Bingkai').src = this.value;document.getElementById('Bingkaix').src = this.value;" class="mkb-input" value="" id="Bingkaipilih">
@@ -281,7 +281,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 </div>       
 </div>
 	
-<div id="subfoto" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);">
+<div id="subfoto" class="subs">
 <div id="mkb-group">
 	<label>Foto/Picture : </label>
 	<input type="file" id="getval" name="background-image" onchange="document.getElementById('imgposter').src = window.URL.createObjectURL(this.files[0])" class="mkb-input" accept="image/png, image/gif, image/jpeg" style="color:transparent; width:80px;"/>
@@ -324,7 +324,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 </div>
 </div>
 
-<div id="subtitle" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);"> 
+<div id="subtitle" class="subs"> 
 <div id="mkb-group">   
 	<label>Judul :</label>
 	<center>
@@ -385,7 +385,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 </div>
 </div>
 
-<div id="subnote" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);"> 
+<div id="subnote" class="subs"> 
 <div id="mkb-group">
     <label>✍ Tulis Nama/Komentar :</label>
    	<center>
@@ -460,7 +460,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 </div>
 
-<div id="subsave" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="myslide = setTimeout(hideallsubs, 2000);"> 
+<div id="subsave" class="subs"> 
 <input id="btn_convert" type="button" value="Save" class="mkb-button"/>	
 </div>
 </div>
