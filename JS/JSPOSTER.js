@@ -314,14 +314,14 @@ document.getElementById("subsave").style.height = "0%";
 }
 
 function showSubmenu() {
-  var x = document.getElementById("submenu");
-  var currentColor = window.getComputedStyle(x, null).left;
+  var XOX = document.getElementById("submenu");
+  var currentColor = window.getComputedStyle(XOX, null).left;
 
-  if(currentColor === -300px) {
+  if(currentColor === "-300px") {
 	hideallsubs();	  
-    	x.style.color = 0PX;
+    	XOX.style.color = "0PX";
   } else {
-    	x.style.color = -300px;
+    	XOX.style.color = "-300px";
   } 
 }
 
