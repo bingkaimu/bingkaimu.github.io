@@ -348,7 +348,6 @@ function juduloff() {
 document.getElementById("judulposter").style.display = 'none';	
 document.getElementById("descposter").style.display = 'none';
 document.getElementById("PosisiHurufJudul").style.display = 'none';
-document.getElementById("PosisiHurufJudul").style.display = 'none';
 document.getElementById("PosisiHurufAlignJudul").style.display = 'none';
 document.getElementById("GayaHurufJudul").style.display = 'none';		
 document.getElementById("colortextJudul").style.display = 'none';	
