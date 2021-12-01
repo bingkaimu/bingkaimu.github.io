@@ -331,7 +331,7 @@ function showSubtema() {
 
   if(CURRENTHEIGHT === "0px") {
 	hideallsubs();	  
-    	XOX.style.height = "220px";
+    	XOX.style.height = "250px";
   } else {
     	XOX.style.height = "0px";
   } 
