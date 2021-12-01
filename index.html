@@ -148,7 +148,7 @@ if ('serviceWorker' in navigator) {
 </div>
 <div id="previewImg" class="previewImg"></div>
 	
-<div id="hideallsubs" onmouseover="clearTimeout(myslide)">
+<div id="hideallsubs">
 
 <div id="settingposter">
 	<span id="TabMenu" onclick="showSubmenu();myslide = setTimeout(hideallsubs, 3000);" style="color: orange;"><i class="material-icons" style="color: orange;">menu</i>Menu</span>
@@ -160,7 +160,7 @@ if ('serviceWorker' in navigator) {
     	<span id="TabHelp" onclick="showSubsave();myslide = setTimeout(hideallsubs, 3000);"><i class="material-icons">file_download</i>Save</span>
 </div>
 
-<div id="submenu" class="subs"> 
+<div id="submenu" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();"> 
 	<center style="color: white;" id="header" onclick="hideallsubs();">
 		<img style="height: 100px; padding-top: 30px;" src="/ICON/152_px.png"/>
 		<h1 style="-webkit-text-stroke: 0.5px black; margin-top: -50px; color: white; font-size: 58px; font-family: Henny Penny;" >Poster Mu</h1>
@@ -172,7 +172,7 @@ if ('serviceWorker' in navigator) {
 	</center>	
 </div>
 
-<div id="subtema" class="subs">   
+<div id="subtema" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();">   
 <div id="mkb-group">
 	<label>Background :</label>
 		<select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
@@ -221,7 +221,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </div>
 
-<div id="subframe" class="subs">
+<div id="subframe" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();">
 <div id="mkb-group">
 	<label>Frame :</label>	
 		<select name="Bingkaipilih" list="Bingkaipilih" onchange="document.getElementById('Bingkai').src = this.value;document.getElementById('Bingkaix').src = this.value;" class="mkb-input" value="" id="Bingkaipilih">
@@ -265,7 +265,7 @@ if ('serviceWorker' in navigator) {
 </div>       
 </div>
 	
-<div id="subfoto" class="subs">
+<div id="subfoto" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();">
 <div id="mkb-group">
 	<label>Foto/Picture : </label>
 	<input type="file" id="getval" name="background-image" onchange="document.getElementById('imgposter').src = window.URL.createObjectURL(this.files[0])" class="mkb-input" accept="image/png, image/gif, image/jpeg" style="color:transparent; width:80px;"/>
@@ -308,7 +308,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </div>
 
-<div id="subtitle" class="subs"> 
+<div id="subtitle" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();"> 
 <div id="mkb-group">   
 	<label>Judul :</label>
 	<center>
@@ -369,7 +369,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </div>
 
-<div id="subnote" class="subs"> 
+<div id="subnote" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();"> 
 <div id="mkb-group">
     <label>✍ Tulis Nama/Komentar :</label>
    	<center>
@@ -444,7 +444,7 @@ if ('serviceWorker' in navigator) {
 
 </div>
 
-<div id="subsave" class="subs"> 
+<div id="subsave" class="subs" onmouseover="clearTimeout(myslide)" onmouseout="hideallsubs();"> 
 <input id="btn_convert" type="button" value="Save" class="mkb-button"/>	
 </div>
 </div>
