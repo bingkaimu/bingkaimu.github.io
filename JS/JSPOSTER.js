@@ -367,3 +367,16 @@ function tadescon() {
 juduloff();
 document.getElementById("descposter").style.display = 'block';	
 }
+
+function namaoff() {
+document.getElementById("mkb-group ta03").style.display = 'none';
+document.getElementById("subtitle").style.height = "200px";	
+}
+function namaon() {
+document.getElementById("mkb-group ta03").style.display = 'block';
+document.getElementById("subnote").style.height = "350px";	
+}
+function tanamaon() {
+namaoff();
+document.getElementById("textchatposter").style.display = 'block';	
+}
