@@ -195,7 +195,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 				<option onclick="document.getElementById('temainput').style.display  = 'none';" value="/IMG/ABSTAK-03.jpg">TEMA-03</option>
 				<option onclick="document.getElementById('temainput').style.display  = 'block';">Other</option>    
 		</select>
-<input style="display: none;" id="temainput" type="file" accept="image/*" onchange="document.getElementById('imgposterbcg').src = window.URL.createObjectURL(this.files[0])">
+<input id="temainput" type="file" accept="image/*" onchange="document.getElementById('imgposterbcg').src = window.URL.createObjectURL(this.files[0])">
 </div>
   
 <div id="mkb-group">
@@ -216,7 +216,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 				<option onclick="document.getElementById('logoinput').style.display  = 'none';" value="/IMG/INDONESIA-05.png">INDONESIA-05</option>  
 				<option onclick="document.getElementById('logoinput').style.display  = 'block';">LAINNYA</option>    
 		</select>
-<input style="display: none;" id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
+<input id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
 </div> 
 <div id="mkb-group">		
 	<label>Posisi Logo :</label>
