@@ -343,7 +343,7 @@ function showSubframe() {
 
   if(CURRENTHEIGHT === "0px") {
 	hideallsubs();	  
-    	XOX.style.height = "150px";
+    	XOX.style.height = "140px";
   } else {
     	XOX.style.height = "0px";
   } 
@@ -355,7 +355,7 @@ function showSubfoto() {
 
   if(CURRENTHEIGHT === "0px") {
 	hideallsubs();	  
-    	XOX.style.height = "340px";
+    	XOX.style.height = "300px";
   } else {
     	XOX.style.height = "0px";
   } 
@@ -367,7 +367,7 @@ function showSubjudul() {
 
   if(CURRENTHEIGHT === "0px") {
 	hideallsubs();	  
-    	XOX.style.height = "420px";
+    	XOX.style.height = "400px";
   } else {
     	XOX.style.height = "0px";
   } 
@@ -379,7 +379,7 @@ function showSubnote() {
 
   if(CURRENTHEIGHT === "0px") {
 	hideallsubs();	  
-    	XOX.style.height = "350px";
+    	XOX.style.height = "310px";
   } else {
     	XOX.style.height = "0px";
   } 
