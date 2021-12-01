@@ -280,4 +280,4 @@ text-shadow: 2px 2px 2px black;
 display: block;
 padding: 10px;
 }
-textarea {width: calc(100vw - 40px); display:block;}
+textarea {width: calc(100vw - 50px); display:block;}
