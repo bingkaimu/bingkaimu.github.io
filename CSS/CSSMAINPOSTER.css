@@ -287,6 +287,8 @@ display: block;
 position: relative;
 width: 100%; 
 padding-left: auto; 
-padding-right: auto; 
+padding-right: auto;
+margin-left: auto;
+margin-right: auto;	
 text-align: center;
 }	
