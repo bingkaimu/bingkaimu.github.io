@@ -318,8 +318,8 @@ function showSubmenu() {
   var CURRENTLEFT = window.getComputedStyle(XOX, null).left;
 
   if(CURRENTLEFT === "-300px") {
-    	XOX.style.left = "0px";
-	setTimeout(document.getElementById("submenu").style.left  = "-300px"; , 6000);  
+	hideallsubs();  
+    	XOX.style.left = "0px"; 
   } else {
     	XOX.style.left = "-300px";
   } 
