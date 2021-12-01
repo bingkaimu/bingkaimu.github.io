@@ -373,10 +373,10 @@ if ('serviceWorker' in navigator) {
 <div id="mkb-group">
     <label>✍ Tulis Nama/Komentar :</label>
    	<center>
-		<textarea class="mkb-input" type="text" id="textchatposter" style="background-color: #DCDCDC; color: #000000; white-space:pre; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextPoster();" col='80' rows='5'></textarea> 
+		<textarea class="mkb-input" onmouseout="namaon();" oninput="tanamaon();" type="text" id="textchatposter" style="background-color: #DCDCDC; color: #000000; white-space:pre; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextPoster();" col='80' rows='5'></textarea> 
 	</center>
 </div>
-<div id="mkb-group">
+<div id="mkb-group ta03">
     <label>↕ :</label>
         <select id="UkuranHuruf" onchange="OptionTextSize();" name="UkuranHuruf" value="" required style="width: 70px; display:inline;">
             <option value="Kecil">Kecil</option>
@@ -392,7 +392,7 @@ if ('serviceWorker' in navigator) {
             <option value="Kiri">Kiri</option>
         </select> 
 </div>
-<div id="mkb-group">
+<div id="mkb-group ta03">
     <label>Ξ :</label>
         <select id="PosisiHurufAlign" onchange="OptionPosisiAlign();" name="PosisiHurufAlign" value="" required style="width: 70px; display:inline;">
             <option value="Tengah">Tengah</option>
@@ -429,7 +429,7 @@ if ('serviceWorker' in navigator) {
         </select> 
 </div>
 
-<div id="mkb-group">
+<div id="mkb-group ta03">
     <label>✎ :</label>
         <select id="WeightHuruf" onchange="OptionWeightFonts(this);" name="WeightHuruf" value="" required style="width: 70px; display:inline;">
             <option>normal</option>
