@@ -281,3 +281,12 @@ display: block;
 padding: 10px;
 }
 textarea {width: calc(100vw - 50px); display:block;}
+
+#hideallsubs {
+display: block; 
+position: relative;
+width: 100%; 
+padding-left: auto; 
+padding-right: auto; 
+text-align: center;
+}	
