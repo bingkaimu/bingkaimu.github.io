@@ -345,22 +345,22 @@ document.getElementById("subsave").style.height = "80px";
 }
 
 function juduloff() {
-document.getElementById("judulposter").style.display = 'none';	
-document.getElementById("descposter").style.display = 'none';
-document.getElementById("mkb-group ta01").style.display = 'none';
-document.getElementById("mkb-group ta02").style.display = 'none';
+document.getElementById("judulposter").style.height = '0px';	
+document.getElementById("descposter").style.height = '0px';
+document.getElementById("mkb-group ta01").style.height = '0px';
+document.getElementById("mkb-group ta02").style.height = '0px';
 }
 function judulon() {
-document.getElementById("judulposter").style.display = 'block';	
-document.getElementById("descposter").style.display = 'block';
-document.getElementById("mkb-group ta01").style.display = 'block';
-document.getElementById("mkb-group ta02").style.display = 'block';	
+document.getElementById("judulposter").style.height = 'auto';	
+document.getElementById("descposter").style.height = 'auto';
+document.getElementById("mkb-group ta01").style.height = 'auto';
+document.getElementById("mkb-group ta02").style.height = 'auto';	
 }
 function tajudulon() {
 juduloff();
-document.getElementById("judulposter").style.display = 'block';	
+document.getElementById("judulposter").style.height = 'auto';	
 }
 function tadescon() {
 juduloff();
-document.getElementById("descposter").style.display = 'block';	
+document.getElementById("descposter").style.height = 'auto';	
 }
