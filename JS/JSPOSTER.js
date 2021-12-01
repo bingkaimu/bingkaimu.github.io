@@ -315,41 +315,87 @@ document.getElementById("subsave").style.height = "0%";
 
 function showSubmenu() {
   var XOX = document.getElementById("submenu");
-  var currentColor = window.getComputedStyle(XOX, null).left;
+  var CURRENTLEFT = window.getComputedStyle(XOX, null).left;
 
-  if(currentColor === "-300px") {
+  if(CURRENTLEFT === "-300px") {
 	hideallsubs();	  
-    	XOX.style.color = "0PX";
+    	XOX.style.left = "0px";
   } else {
-    	XOX.style.color = "-300px";
+    	XOX.style.left = "-300px";
   } 
 }
 
 function showSubtema() {
-hideallsubs();
-document.getElementById("subtema").style.height = "220px"; 	
-}
+  var XOX = document.getElementById("subtema");
+  var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
+
+  if(CURRENTHEIGHT === "0px") {
+	hideallsubs();	  
+    	XOX.style.height = "220px";
+  } else {
+    	XOX.style.height = "0px";
+  } 
+}	
 
 function showSubframe() {
-hideallsubs();
-document.getElementById("subframe").style.height = "150px"; 	
-}
+  var XOX = document.getElementById("subframe");
+  var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
+
+  if(CURRENTHEIGHT === "0px") {
+	hideallsubs();	  
+    	XOX.style.height = "150px";
+  } else {
+    	XOX.style.height = "0px";
+  } 
+}	
+
 function showSubfoto() {
-hideallsubs();
-document.getElementById("subfoto").style.height = "340px";	
-}
+  var XOX = document.getElementById("subfoto");
+  var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
+
+  if(CURRENTHEIGHT === "0px") {
+	hideallsubs();	  
+    	XOX.style.height = "340px";
+  } else {
+    	XOX.style.height = "0px";
+  } 
+}	
+
 function showSubjudul() {
-hideallsubs();
-document.getElementById("subtitle").style.height = "420px"; 	
-}
+  var XOX = document.getElementById("subtitle");
+  var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
+
+  if(CURRENTHEIGHT === "0px") {
+	hideallsubs();	  
+    	XOX.style.height = "420px";
+  } else {
+    	XOX.style.height = "0px";
+  } 
+}	
+
 function showSubnote() {
-hideallsubs();
-document.getElementById("subnote").style.height = "350px"; 	
-}
+  var XOX = document.getElementById("subnote");
+  var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
+
+  if(CURRENTHEIGHT === "0px") {
+	hideallsubs();	  
+    	XOX.style.height = "350px";
+  } else {
+    	XOX.style.height = "0px";
+  } 
+}	
+
 function showSubsave() {
-hideallsubs();
-document.getElementById("subsave").style.height = "80px";	
-}
+  var XOX = document.getElementById("subsave");
+  var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
+
+  if(CURRENTHEIGHT === "0px") {
+	hideallsubs();	  
+    	XOX.style.height = "80px";
+  } else {
+    	XOX.style.height = "0px";
+  } 
+}	
 
 function juduloff() {
 document.getElementById("judulposter").style.display = 'none';	
