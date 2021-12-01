@@ -349,8 +349,7 @@ document.getElementById("judulposter").style.display = 'none';
 document.getElementById("descposter").style.display = 'none';
 document.getElementById("mkb-group ta01").style.display = 'none';
 document.getElementById("mkb-group ta02").style.display = 'none';
-document.getElementById("mkb-group ta02").style.display = 'none';
-document.getElementById("subtitle").style.height = "200px";
+document.getElementById("subtitle").style.height = "180px";
 document.getElementById("subnote").style.height = "0px";
 	
 }
@@ -359,6 +358,7 @@ document.getElementById("judulposter").style.display = 'block';
 document.getElementById("descposter").style.display = 'block';
 document.getElementById("mkb-group ta01").style.display = 'block';
 document.getElementById("mkb-group ta02").style.display = 'block';
+document.getElementById("subtitle").style.height = "420px";	
 }
 function tajudulon() {
 juduloff();
@@ -371,7 +371,7 @@ document.getElementById("descposter").style.display = 'block';
 
 function namaoff() {
 document.getElementById("mkb-group ta03").style.display = 'none';
-document.getElementById("subnote").style.height = "200px";
+document.getElementById("subnote").style.height = "180px";
 document.getElementById("subtitle").style.height = "0px";	
 }
 function namaon() {
