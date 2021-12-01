@@ -203,8 +203,8 @@ font-family: Arial, sans-serif!important;
 }
 
 body {
-background-image: url("/IMG/greenbcg.jpg");
-background-repeat: repeat;	
+background-color: white;
+color: black;	
 }
 .material-icons {
 font-size:25px; 
