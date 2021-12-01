@@ -411,7 +411,7 @@ document.getElementById("judulposter").style.display = 'block';
 document.getElementById("descposter").style.display = 'block';
 document.getElementById("mkb-group ta01").style.display = 'block';
 document.getElementById("mkb-group ta02").style.display = 'block';
-document.getElementById("subtitle").style.height = "420px";	
+document.getElementById("subtitle").style.height = "400px";	
 }
 function tajudulon() {
 juduloff();
@@ -429,7 +429,7 @@ document.getElementById("subtitle").style.height = "0px";
 }
 function namaon() {
 document.getElementById("mkb-group ta03").style.display = 'block';
-document.getElementById("subnote").style.height = "350px";	
+document.getElementById("subnote").style.height = "310px";	
 }
 function tanamaon() {
 namaoff();
