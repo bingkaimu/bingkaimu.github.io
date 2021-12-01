@@ -240,7 +240,7 @@ cursor: pointer;
 }
 #subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {
 justify-content: center;	
-vertical-align:middle;	
+left: 50%	
 bottom: 0px;
 display: block;	
 height: 0%;
