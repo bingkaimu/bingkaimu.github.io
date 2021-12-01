@@ -312,16 +312,16 @@ if ('serviceWorker' in navigator) {
 <div id="mkb-group">   
 	<label>Judul :</label>
 	<center>
-		<textarea class="mkb-input" type="text" id="judulposter" onmouseout="judulon()" oninput="tajudulon()" style="background-color: #DCDCDC; color: #000000; white-space:pre; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextjudulPoster();" col='80' rows='5'></textarea> 
+		<textarea class="mkb-input" type="text" id="judulposter" onmouseout="judulon();" oninput="tajudulon();" style="background-color: #DCDCDC; color: #000000; white-space:pre; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextjudulPoster();" col='80' rows='5'></textarea> 
 	</center>
 </div>
 <div id="mkb-group">        
 	<label>Deskripsi :</label>
 	<center>
-		<textarea class="mkb-input" type="text" id="descposter" onmouseout="judulon()" oninput="tajudulon()" style="background-color: #DCDCDC; color: #000000; white-space:pre; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextdescPoster();" col='80' rows='5'></textarea> 
+		<textarea class="mkb-input" type="text" id="descposter" onmouseout="judulon();" oninput="tadescon();" style="background-color: #DCDCDC; color: #000000; white-space:pre; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextdescPoster();" col='80' rows='5'></textarea> 
 	</center>
 </div>
-<div id="mkb-group">
+<div id="mkb-group ta01">
     <label>⯐ :</label>
         <select id="PosisiHurufJudul" onchange="OptionPosisiHurufJudul();" name="PosisiHurufJudul" value="" required style="width: 70px; display:inline;">
             <option value="Bawah">Bawah</option>
@@ -335,7 +335,7 @@ if ('serviceWorker' in navigator) {
             <option value="Kiri">Kiri</option>
         </select>
 </div>
-<div id="mkb-group">
+<div id="mkb-group ta02">
     <label>✎ :</label>
         <select id="GayaHurufJudul" onchange="OptionFontsJudul(this);" name="GayaHurufJudul" value="" required style="width: 70px; display:inline;">
             <option style="font-family: Concert+One;">Concert One</option>
