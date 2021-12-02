@@ -313,16 +313,6 @@ document.getElementById("subnote").style.height = "0%";
 document.getElementById("subsave").style.height = "0%";
 }
 
-function showSubmenu() {
-  var XOX = document.getElementById("submenu");
-  var CURRENTLEFT = window.getComputedStyle(XOX, null).left;
-  if(CURRENTLEFT === "-300px") {
-    	XOX.style.left = "0px"; 
-  } else {
-    	XOX.style.left = "-300px";
-  } 
-}
-
 function showSubtema() {
   var XOX = document.getElementById("subtema");
   var CURRENTHEIGHT = window.getComputedStyle(XOX, null).height;
