@@ -57,20 +57,6 @@ $(document).ready(function() {
 })
 </script>
 
-
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js', {scope: '.'}).then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-</script>
 <script> 
 (function (global) {
 
@@ -109,20 +95,7 @@ if ('serviceWorker' in navigator) {
     }
 })(window);
 </script> 
-<script>	
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  showInstallPromotion();
-  // Optionally, send analytics event that PWA install promo was shown.
-  console.log(`'beforeinstallprompt' event was fired.`);
-});
-</script>	
+	
 </head>
 
 <body >
@@ -166,12 +139,14 @@ window.addEventListener('beforeinstallprompt', (e) => {
 	
 <div id="settingposter">
 	<span id="TabMenu" onclick="showSubmenu();" style="color: orange;"><i class="material-icons" style="color: orange;">menu</i>Menu</span>
+	<div id="settdesign">
 	<span id="TabTema" onclick="showSubtema();"><i class="material-icons">bubble_chart</i>Background</span>
 	<span id="TabFrame" onclick="showSubframe();"><i class="material-icons">crop_original</i>Frame</span>
 	<span id="TabFoto" onclick="showSubfoto();"><i class="material-icons">add_a_photo</i>Foto</span>
 	<span id="TabJudul" onclick="showSubjudul();"><i class="material-icons">title</i> Title</span>
 	<span id="TabNote" onclick="showSubnote();"><i class="material-icons">insert_comment</i>Note</span>
     	<span id="TabHelp"><i class="material-icons">file_download</i>Save</span>
+	</div>
 </div>
 
 <div id="submenu" class="subs"> 
