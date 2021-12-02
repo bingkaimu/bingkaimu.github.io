@@ -299,7 +299,7 @@ height: 45px;
 border-radius: 10px 10px 0px 0px;	
 }
 #menuposter span{
-display: inline-block;
+display: inline;
 text-align: center; 
 padding: 5px 10px 5px 10px;
 width:auto;
