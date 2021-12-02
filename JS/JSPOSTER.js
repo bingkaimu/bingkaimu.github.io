@@ -316,9 +316,7 @@ document.getElementById("subsave").style.height = "0%";
 function showSubmenu() {
   var XOX = document.getElementById("submenu");
   var CURRENTLEFT = window.getComputedStyle(XOX, null).left;
-
   if(CURRENTLEFT === "-300px") {
-	hideallsubs();  
     	XOX.style.left = "0px"; 
   } else {
     	XOX.style.left = "-300px";
