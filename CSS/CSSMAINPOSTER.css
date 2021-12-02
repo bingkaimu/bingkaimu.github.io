@@ -307,8 +307,8 @@ cursor: pointer;
 }	
 .btnmenu {
 display: block;
-padding: 20px;
-font-size: 18px;
+padding: 10px;
+font-size: 24px;
 color: black;	
 }
 #framepage {display: none;}
