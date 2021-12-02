@@ -238,15 +238,14 @@ cursor: pointer;
 color: red;
 cursor: pointer;
 }
-#subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {
+#subtema, #subframe, #subfoto, #subtitle, #subnote, #subsave {	
 justify-content: center;	
 left: calc(50% - 170px);	
 bottom: 0px;
 display: block;	
 height: 0%;
 width: calc(340px - 20px);	
-position: -webkit-sticky;
-position: sticky;	
+position: fixed;	
 z-index: 310!important;	
 transition: height 0.6s;
 background-color: rgb(220, 220, 220, 0.95);
