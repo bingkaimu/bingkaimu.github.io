@@ -308,7 +308,7 @@ cursor: pointer;
 .btnmenu {
 display: block;
 padding: 10px;
-font-size: 24px;
+font-size: 20px;
 color: black;	
 }
 #framepage {display: none; height: calc(100vh - 50px)!important;}
