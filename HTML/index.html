@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="canonical" href="/" /> 
+<link rel="manifest" href="/manifest.json" crossorigin="anonymous">
+<link rel="manifest" href="/manifest.webmanifest"  crossorigin="anonymous">
+<script async src="/JS/pwacompat" crossorigin="anonymous"></script>
+	
+<link rel='icon' href='/ICON/152_px.png' sizes='152x152'  crossorigin="anonymous"/>
+<link rel="apple-touch-icon" href="/ICON/152_px.png"  crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+<title>PosterMu</title>
+<meta name="title" content="PosterMu-App">    
+<meta name="keywords" content="PosterMu-App"> 
+<meta name="Description" content="Aplikasi PosterMu-App" />	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="theme-color" content="#000000"/>
+<meta name="msapplication-navbutton-color" content="#000000"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#000000" /> 	
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="PosterMu-App" />	
+<meta name="viewport" content="width=device-width, initial-scale=1"/>   
+<meta name="msapplication-TileImage" content="/ICON/152_px.png"  crossorigin="anonymous"/>
+<meta name="msapplication-TileColor" content="#000000" />  
+
+<base target="_top">	
+	
+<script src="/JQUERY/jquery-3.6.0.min.js" crossorigin></script>
+<script src="/JS/POSTER.js" crossorigin></script>
+	
+<link href="/CSS/CSSMAINPOSTER.css" rel="stylesheet" type="text/css" media="all" crossorigin/>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint" rel="stylesheet" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One" rel="stylesheet" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny" rel="stylesheet" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy" rel="stylesheet" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Concert+One" rel="stylesheet" crossorigin> 
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>	
+<link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Black And White Picture' rel='stylesheet'>	
+
+<script>
+$(document).ready(function() {
+  $("#framecolor").change(function() {
+    var coloropacity = $("#frameopacity[type=range]").val();
+    var color = $("#framecolor[type=color]").val();
+    var rgbaCol = 'rgba(' + parseInt(color.slice(-6, -4), 16) + ',' + parseInt(color.slice(-4, -2), 16) + ',' + parseInt(color.slice(-2), 16) + ',' + coloropacity + ')';
+    $('#imgposter').css('borderColor', rgbaCol)
+  })
+})
+</script>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js', {scope: '.'}).then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+<script> 
+(function (global) {
+
+    if(typeof (global) === "undefined") {
+        throw new Error("window is undefined");
+    }
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        // Making sure we have the fruit available for juice (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {
+        noBackPlease();
+
+        // Disables backspace on page except on input fields and textarea..
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // Stopping the event bubbling up the DOM tree...
+            e.stopPropagation();
+        };
+    }
+})(window);
+</script> 
+<script>	
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  showInstallPromotion();
+  // Optionally, send analytics event that PWA install promo was shown.
+  console.log(`'beforeinstallprompt' event was fired.`);
+});
+</script>	
+</head>
+
+<body >
+<center id="headerpage">
+<h1 style="margin: 0px; color: red; font-size:50px; display: inline-block; font-family: Henny Penny;" >Poster Mu</h1>
+</center>	
+
+<center style="overscroll-behavior: none;">
+<div>
+	
+<div id="html-content-holder" class="html-content-holder">   
+<div id="backgroundposter" class="backgroundposter">
+<img  id="imgposterbcg" class="imgposterbcg" src="/IMG/foto.png"/>
+<img  id="imgposter" src="" class="imgposter"/>
+<img  id="logoposter" src="" class="logoposter"/>
+<img  id="Bingkaix" src="" class="Bingkaix"/>
+<img  id="Bingkai" src="" class="Bingkai"/>
+<div id="judultposter" class="judultposter">
+<table width="300px" border="0" cellspacing="0" cellpadding="0"  id="judulinner" class="judulinner">
+  <tr>
+    <td width="300px" id="judul" class="judul">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="300px" id="deskripsi" class="deskripsi">&nbsp;</td>
+  </tr>
+</table>
+<div id="logomaskibow" class="logomaskibow">www.postermu.github.io</div>
+</div>
+<div id="textposterout" class="textposterout">
+<table width="300px" border="0" cellspacing="0" cellpadding="0"  id="textposterin" class="textposterin">
+  <tr>
+    <td id="textposter" class="textposter">&nbsp;</td>
+  </tr>
+</table>
+</div>
+</div>
+</div>	
+	
+</div>
+<div id="previewImg" class="previewImg"></div>
+	
+<div id="settingposter">
+	<span id="TabMenu" onclick="showSubmenu();" style="color: orange;"><i class="material-icons" style="color: orange;">menu</i>Menu</span>
+	<span id="TabTema" onclick="showSubtema();"><i class="material-icons">bubble_chart</i>Background</span>
+	<span id="TabFrame" onclick="showSubframe();"><i class="material-icons">crop_original</i>Frame</span>
+	<span id="TabFoto" onclick="showSubfoto();"><i class="material-icons">add_a_photo</i>Foto</span>
+	<span id="TabJudul" onclick="showSubjudul();"><i class="material-icons">title</i> Title</span>
+	<span id="TabNote" onclick="showSubnote();"><i class="material-icons">insert_comment</i>Note</span>
+    	<span id="TabHelp"><i class="material-icons">file_download</i>Save</span>
+</div>
+
+<div id="submenu" class="subs"> 
+	<center style="color: white;" id="header" onclick="hideallsubs();">
+		<img style="height: 100px; padding-top: 30px;" src="/ICON/152_px.png"/>
+		<h1 style="-webkit-text-stroke: 0.5px black; margin-top: -50px; color: white; font-size: 58px; font-family: Henny Penny;" >Poster Mu</h1>
+	</center>
+	
+	<center style="margin-bottom: 5px; padding: auto;">
+		<img style="height: 30px; display: block;" src="/IMG/mkb.png"/>
+		Maskibow on PsyChoGrApIcs	
+	</center>	
+</div>
+
+<div id="subtema" class="subs">   
+<div id="mkb-group">
+	<label>Background :</label>
+		<select name="temapilih" list="temapilih" onchange="document.getElementById('imgposterbcg').src = this.value;" class="mkb-input" value="" id="temapilih">
+				<option onclick="document.getElementById('temainput').style.visibility   = 'hidden';" value="/IMG/ABSTAK-01.jpg">Background-01</option>
+				<option onclick="document.getElementById('temainput').style.visibility   = 'hidden';" value="/IMG/ABSTAK-02.jpg">Background-02</option>
+				<option onclick="document.getElementById('temainput').style.visibility   = 'hidden';" value="/IMG/ABSTAK-03.jpg">Background-03</option>
+				<option onclick="document.getElementById('temainput').style.visibility   = 'visible';">Other</option>    
+		</select>
+<input id="temainput" type="file" accept="image/*" onchange="document.getElementById('imgposterbcg').src = window.URL.createObjectURL(this.files[0])">
+</div>
+  
+<div id="mkb-group">
+	<label>Pilih Logo :</label>
+		<select name="logopilih" list="logopilih" onchange="document.getElementById('logoposter').src = this.value;" class="mkb-input" value="" id="logopilih">
+				<option value="">Tanpa Logo</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/logoDKI.png.png">Logo DKI</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/tutwurih.png">Logo Tut Wuri</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/GARUDA-01.png">Garuda-01</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/GARUDA-03.png">Garuda-02</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/GARUDA-04.png">Garuda-03</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/GARUDA-05.png">Garuda-04</option>
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/garuda.png">Garuda-05</option>	
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/INDONESIA-01.png">Indonesia-01</option>      
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/INDONESIA-02.png">Indonesia-02</option>            
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/INDONESIA-03.png">Indonesia-03</option>  
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/INDONESIA-04.png">Indonesia-04</option>  
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'hidden';" value="/IMG/INDONESIA-05.png">Indonesia-05</option>  
+				<option onclick="document.getElementById('logoinput').style.visibility   = 'visible';">Other</option>    
+		</select>
+<input id="logoinput" type="file" accept="image/*" onchange="document.getElementById('logoposter').src = window.URL.createObjectURL(this.files[0])">
+</div> 
+<div id="mkb-group">		
+	<label>Posisi Logo :</label>
+		<select name="posisilogo" list="posisilogo" onchange="Optionposisilogo();" class="mkb-input" value="" id="posisilogo">
+				<option value="Atas">Atas</option>
+				<option value="Bawah">Bawah</option>
+		</select>
+</div>     
+<div id="mkb-group">	
+	<label>Ukuran Logo :</label>	
+		<select name="ukuranlogo" list="ukuranlogo" onchange="document.getElementById('logoposter').style.width  = this.value;" class="mkb-input" value="" id="ukuranlogo">
+				<option value="100px">Normal</option>
+				<option value="70px">Kecil</option>
+				<option value="140px">Besar</option>
+		</select>
+</div>
+</div>
+
+<div id="subframe" class="subs">
+<div id="mkb-group">
+	<label>Frame :</label>	
+		<select name="Bingkaipilih" list="Bingkaipilih" onchange="document.getElementById('Bingkai').src = this.value;document.getElementById('Bingkaix').src = this.value;" class="mkb-input" value="" id="Bingkaipilih">
+				<option value="">Tanpa Bingkai</option>
+				<option value="/IMG/RAMPLE-01.png">Bingkai-01</option>
+				<option value="/IMG/RAMPLE-02.png">Bingkai-02</option>
+				<option value="/IMG/RAMPLE-03.png">Bingkai-03</option>
+				<option value="/IMG/RAMPLE-04.png">Bingkai-04</option>
+				<option value="/IMG/RAMPLE-05.png">Bingkai-05</option>
+				<option value="/IMG/RAMPLE-06.png">Bingkai-06</option>
+				<option value="/IMG/RAMPLE-07.png">Bingkai-07</option>
+				<option value="/IMG/RAMPLE-08.png">Bingkai-08</option>
+				<option value="/IMG/RAMPLE-09.png">Bingkai-09</option>
+				<option value="/IMG/RAMPLE-10.png">Bingkai-10</option>
+				<option value="/IMG/RAMPLE-11.png">Bingkai-11</option>
+				<option value="/IMG/RAMPLE-12.png">Bingkai-12</option>
+				<option value="/IMG/RAMPLE-13.png">Bingkai-13</option>
+				<option value="/IMG/RAMPLE-14.png">Bingkai-14</option>
+				<option value="/IMG/RAMPLE-15.png">Bingkai-15</option>
+				<option value="/IMG/RAMPLE-16.png">Bingkai-16</option>
+				<option value="/IMG/RAMPLE-17.png">Bingkai-17</option>
+				<option value="/IMG/RAMPLE-18.png">Bingkai-18</option>
+				<option value="/IMG/RAMPLE-19.png">Bingkai-19</option>
+				<option value="/IMG/RAMPLE-20.png">Bingkai-20</option>
+				<option value="/IMG/RAMPLE-21.png">Bingkai-21</option>
+				<option value="/IMG/RAMPLE-22.png">Bingkai-22</option>
+				<option value="/IMG/RAMPLE-23.png">Bingkai-23</option>
+				<option value="/IMG/RAMPLE-24.png">Bingkai-24</option>
+				<option value="/IMG/RAMPLE-25.png">Bingkai-25</option>
+				<option value="/IMG/RAMPLE-26.png">Bingkai-26</option>
+				<option value="/IMG/RAMPLE-27.png">Bingkai-27</option>        
+		</select>
+</div>
+<div id="mkb-group">
+	<label>Frame Position :</label>
+		<select name="listbingkai" list="listbingkai" onchange="Optionlistbingkai();" class="mkb-input" value="" id="listbingkai">
+				<option value="Bawah">Bawah</option>
+				<option value="Atas">Atas</option>
+				<option value="Atas-Bawah">Atas-Bawah</option>
+		</select> 
+</div>       
+</div>
+	
+<div id="subfoto" class="subs">
+<div id="mkb-group">
+	<label>Foto/Picture : </label>
+	<input type="file" id="getval" name="background-image" onchange="document.getElementById('imgposter').src = window.URL.createObjectURL(this.files[0])" class="mkb-input" accept="image/png, image/gif, image/jpeg" style="color:transparent; width:80px;"/>
+</div>
+<div id="mkb-group">
+	<label>Frame Foto Style :</label>
+	<select name="FrameFoto" list="FrameFoto" onchange="OptionFrameFoto();" value="" class="mkb-input" id="FrameFoto" style="display: inline; width:100px;">
+		<option value="frame01">Frame-01</option>
+			<option value="frame02">Frame-02</option>
+			<option value="frame03">Frame-03</option>
+			<option value="frame04">Frame-04</option>
+			<option value="frame05">Frame-05</option>
+			<option value="frame06">Frame-06</option>
+			<option value="frame07">Frame-07</option>
+			<option value="frame08">Frame-08</option>
+			<option value="frame09">Frame-09</option>
+	</select>
+</div>
+<div id="mkb-group">
+	<label style="display: block!important;">Frame Shadow :</label>
+	<div id="mkb-group" style="display: inline-block!important;">
+		<label for="vehicle1" style="display: inline-block;">Atas : </label>
+		 	<input type="checkbox" id="checkshadowatas" onclick="OptionFrameShadowatas();" name="checkshadowatas" class="checkin"><br />
+	
+		<label for="vehicle1" style="display: inline-block;">Bawah : </label>
+			<input type="checkbox" id="checkshadowbawah" onclick="OptionFrameShadowbawah();" name="checkshadowbawah" class="checkin"><br />
+	</div>
+	<div id="mkb-group" style="display: inline-block!important;">	
+		<label for="vehicle2" style="display: inline-block;">Kanan : </label>
+			<input type="checkbox" id="checkshadowkiri" onclick="OptionFrameShadowkiri();" name="checkshadowkiri" class="checkin"><br />
+	
+		<label for="vehicle3" style="display: inline-block;">Kiri : </label>
+			<input type="checkbox" id="checkshadowkanan" onclick="OptionFrameShadowkanan();" name="checkshadowkanan" class="checkin">
+	</div>
+</div>
+<div id="mkb-group">
+	<label>Frame Color :</label> 
+		  <input type="color" id="framecolor" name="framecolor" onchange="OptionFrameColor();" value="#ffffff">
+		  <input type="range" min="0" max="0.4" step="0.1" id="frameopacity" style="display:none">
+</div>
+</div>
+
+<div id="subtitle" class="subs"> 
+<div id="mkb-group">   
+	<label>Judul :</label>
+	<center>
+		<textarea class="mkb-input" type="text" id="judulposter" onmouseout="judulon();" oninput="tajudulon();" onclick="tajudulon();" style="background-color: #DCDCDC; color: #000000; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextjudulPoster();" col='80' rows='5'></textarea> 
+	</center>
+</div>
+<div id="mkb-group">        
+	<label>Deskripsi :</label>
+	<center>
+		<textarea class="mkb-input" type="text" id="descposter" onmouseout="judulon();" oninput="tadescon();" onclick="tadescon();" style="background-color: #DCDCDC; color: #000000; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextdescPoster();" col='80' rows='5'></textarea> 
+	</center>
+</div>
+<div id="mkb-group ta01">
+    <label>⯐ :</label>
+        <select id="PosisiHurufJudul" onchange="OptionPosisiHurufJudul();" name="PosisiHurufJudul" value="" required style="width: 70px; display:inline;">
+            <option value="Bawah">Bawah</option>
+            <option value="Atas">Atas</option>
+        </select> 
+
+    <label>Ξ :</label>
+        <select id="PosisiHurufAlignJudul" onchange="OptionPosisiAlignJudul();" name="PosisiHurufAlignJudul" value="" required style="width: 70px; display:inline;">
+            <option value="Tengah">Tengah</option>
+            <option value="Kanan">Kanan</option>
+            <option value="Kiri">Kiri</option>
+        </select>
+</div>
+<div id="mkb-group ta02">
+    <label>✎ :</label>
+        <select id="GayaHurufJudul" onchange="OptionFontsJudul(this);" name="GayaHurufJudul" value="" required style="width: 70px; display:inline;">
+            <option style="font-family: Concert+One;">Concert One</option>
+            <option style="font-family: Luckiest+Guy;">Luckiest Guy</option>
+            <option style="font-family: Henny+Penny;">Henny Penny</option>
+            <option style="font-family: Rampart+One;">Rampart One</option>
+            <option style="font-family: Finger+Paint;">Finger Paint</option>
+            <option style="font-family: Georgia;">Georgia</option>
+            <option style="font-family: Palatino Linotype;">Palatino Linotype</option>
+            <option style="font-family: Book Antiqua;">Book Antiqua</option>
+            <option style="font-family: Times New Roman;">Times New Roman</option>
+            <option style="font-family: Arial;">Arial</option>
+            <option style="font-family: Helvetica;">Helvetica</option>
+            <option style="font-family: Impact;">Impact</option>
+            <option style="font-family: Lucida Sans Unicode;">Lucida Sans Unicode</option>
+            <option style="font-family: Tahoma;">Tahoma</option>
+            <option style="font-family: Verdana;">Verdana</option>
+            <option style="font-family: Courier New;">Courier New</option>
+            <option style="font-family: Lucida Console;">Lucida Console</option>
+            <option style="font-family: Papyrus;">Papyrus</option>
+            <option style="font-family: Stencil Std;">Stencil Std</option>	
+            <option style="font-family: Sofia;">Sofia</option>	
+            <option style="font-family: Annie Use Your Telescope;">Annie Use Your Telescope</option>
+            <option style="font-family: Arbutus;">Arbutus</option>
+            <option style="font-family: Black And White Picture;">Black And White Picture</option>	
+            <option style="font-family: OCR A Std;">OCR A Std</option>
+        </select> 
+
+    <label>🚥 :</label>
+        <input id="colortextJudul" value="#000000" type="color" style="width: 70px; display:inline;" class="mkb-input"  onchange="GettcolorPosterJudul();"> 
+</div>
+</div>
+
+<div id="subnote" class="subs"> 
+<div id="mkb-group">
+    <label>✍ Tulis Nama/Komentar :</label>
+   	<center>
+		<textarea class="mkb-input" onmouseout="namaon();" oninput="tanamaon();" onclick="tanamaon();" type="text" id="textchatposter" style="background-color: #DCDCDC; color: #000000; max-width: 300px;" placeholder="Pesan Teks" value="" onchange="GettextPoster();" col='80' rows='5'></textarea> 
+	</center>
+</div>
+<div id="mkb-group ta03">
+    <label>↕ :</label>
+        <select id="UkuranHuruf" onchange="OptionTextSize();" name="UkuranHuruf" value="" required style="width: 70px; display:inline;">
+            <option value="Kecil">Kecil</option>
+            <option value="Normal">Normal</option>
+            <option value="Besar">Besar</option>
+        </select>
+
+    <label>⯐ :</label>
+        <select id="PosisiHuruf" onchange="OptionPosisiHuruf();" name="PosisiHuruf" value="" required style="width: 70px; display:inline;">
+            <option value="Bawah">Bawah</option>
+            <option value="Atas">Atas</option>
+            <option value="Kanan">Kanan</option>
+            <option value="Kiri">Kiri</option>
+        </select> 
+</div>
+<div id="mkb-group ta03">
+    <label>Ξ :</label>
+        <select id="PosisiHurufAlign" onchange="OptionPosisiAlign();" name="PosisiHurufAlign" value="" required style="width: 70px; display:inline;">
+            <option value="Tengah">Tengah</option>
+            <option value="Kanan">Kanan</option>
+            <option value="Kiri">Kiri</option>
+        </select>
+
+    <label>✎ :</label>
+        <select id="GayaHuruf" onchange="OptionFonts(this);" name="GayaHuruf" value="" required style="width: 70px; display:inline;">
+            <option style="font-family: Concert+One;">Concert One</option>
+            <option style="font-family: Luckiest+Guy;">Luckiest Guy</option>
+            <option style="font-family: Henny+Penny;">Henny Penny</option>
+            <option style="font-family: Rampart+One;">Rampart One</option>
+            <option style="font-family: Finger+Paint;">Finger Paint</option>
+            <option style="font-family: Georgia;">Georgia</option>
+            <option style="font-family: Palatino Linotype;">Palatino Linotype</option>
+            <option style="font-family: Book Antiqua;">Book Antiqua</option>
+            <option style="font-family: Times New Roman;">Times New Roman</option>
+            <option style="font-family: Arial;">Arial</option>
+            <option style="font-family: Helvetica;">Helvetica</option>
+            <option style="font-family: Impact;">Impact</option>
+            <option style="font-family: Lucida Sans Unicode;">Lucida Sans Unicode</option>
+            <option style="font-family: Tahoma;">Tahoma</option>
+            <option style="font-family: Verdana;">Verdana</option>
+            <option style="font-family: Courier New;">Courier New</option>
+            <option style="font-family: Lucida Console;">Lucida Console</option>
+            <option style="font-family: Papyrus;">Papyrus</option>
+            <option style="font-family: Stencil Std;">Stencil Std</option>	
+            <option style="font-family: Sofia;">Sofia</option>	
+            <option style="font-family: Annie Use Your Telescope;">Annie Use Your Telescope</option>
+            <option style="font-family: Arbutus;">Arbutus</option>
+            <option style="font-family: Black And White Picture;">Black And White Picture</option>	
+            <option style="font-family: OCR A Std;">OCR A Std</option>	
+        </select> 
+</div>
+
+<div id="mkb-group ta03">
+    <label>✎ :</label>
+        <select id="WeightHuruf" onchange="OptionWeightFonts(this);" name="WeightHuruf" value="" required style="width: 70px; display:inline;">
+            <option>normal</option>
+            <option>lighter</option>
+            <option>bold</option>
+            <option>bolder</option>
+        </select> 
+
+    <label>🚥 :</label>
+   		 <input id="colortext" value="#000000" type="color" style="width: 70px; display:inline;" class="mkb-input"  onchange="GettcolorPoster();"> 
+</div>
+</div>
+
+<div id="subsave" class="subs"> 
+<input id="btn_convert" type="button" value="Save" class="mkb-button"/>	
+</div>
+
+
+	
+</center>
+<script src="/JS/JSPOSTER.js"></script>
+<center>
+<img style="height: 30px; display: block; margin-top: 10px;" src="/IMG/mkb.png"/>
+Maskibow on PsyChoGrApIcs	
+</center>		
+</body>
+</html>
