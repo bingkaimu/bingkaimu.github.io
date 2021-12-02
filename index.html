@@ -146,7 +146,7 @@ document.getElementById('framepage').src='/HTML/template.html';
 <div id="menuposter">
 	<span id="TabMenu" onclick="showSubmenu();" style="color: orange; display: inline;"><i class="material-icons" style="color: blue; display: inline;">menu</i></span>	
 </div>
-<div id="submenu" class="subs"> 
+<div id="submenu" class="subs" onmouseout="showSubmenu();"> 
 	<div style="position: absolute; width: 100%; text-align: right; margin-left: 10px; width: 10px;"><i onclick="showSubmenu();" class="material-icons" style="font-size:36px;color:red; cursor: pointer;">highlight_off</i></div>
 	<center style="color: white;" id="header" onclick="hideallsubs();">
 		<img style="height: 100px; padding-top: 30px;" src="/ICON/152_px.png"/>
