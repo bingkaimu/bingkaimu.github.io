@@ -110,13 +110,22 @@ window.addEventListener('beforeinstallprompt', (e) => {
   console.log(`'beforeinstallprompt' event was fired.`);
 });
 </script>
-	
+<script>
+function showSubmenu() {
+  var XOX = document.getElementById("submenu");
+  var CURRENTLEFT = window.getComputedStyle(XOX, null).left;
+  if(CURRENTLEFT === "-300px") {
+    	XOX.style.left = "0px"; 
+  } else {
+    	XOX.style.left = "-300px";
+  } 
+}	
+</script>	
 </head>
 
 <body >
 <div id="menuposter">
-	<span id="TabMenu" onclick="showSubmenu();" style="color: orange; display: inline;"><i class="material-icons" style="color: orange; display: inline;">menu</i>
-	<img style="height: 25px; display: inline;" src="/ICON/152_px.png"/>PosterMu App</span>	
+	<span id="TabMenu" onclick="showSubmenu();" style="color: orange; display: inline;"><i class="material-icons" style="color: orange; display: inline;">menu</i>PosterMu App</span>	
 </div>
 <div id="submenu" class="subs"> 
 	<center style="color: white;" id="header" onclick="hideallsubs();">
@@ -140,6 +149,5 @@ window.addEventListener('beforeinstallprompt', (e) => {
 <center style="overscroll-behavior: none;">
 <iframe id="framepage"  style="height:100vh" width="100%" frameBorder="0"></iframe>
 </center>
-<script src="/JS/JSPOSTER.js" crossorigin></script>	
 </body>
 </html>
