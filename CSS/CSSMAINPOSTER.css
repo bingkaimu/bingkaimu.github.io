@@ -311,7 +311,7 @@ padding: 10px;
 font-size: 20px;
 color: black;	
 }
-#framepage {display: none; height: calc(100vh - 50px)!important;}
+#framepage {display: none; height: calc(100% - 50px)!important;}
 iframe, html, body {
 -ms-overflow-style: none !important !important;
 scrollbar-width: none !important !important; 
