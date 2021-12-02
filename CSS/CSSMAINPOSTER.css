@@ -322,7 +322,8 @@ overflow-y: none!important;
 -webkit-appearance: none!important;
 -moz-appearance: none!important;
 -ms-overflow-style: none;
-overflow: none!important; 	
+overflow: none!important; 
+bottom: 0px!important; 	
 }
 
 iframe, html, body {
