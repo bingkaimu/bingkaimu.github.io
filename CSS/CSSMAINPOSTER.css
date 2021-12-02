@@ -256,8 +256,8 @@ text-align: center;
 border-radius: 20px 20px 0px 0px;
 }
 #submenu {
-bottom: 50px;	
-height: calc(100% - 50px);
+bottom: 0px;	
+height: calc(100% - 0px);
 width: 300px;	
 position: fixed;
 left: -300px; 	
