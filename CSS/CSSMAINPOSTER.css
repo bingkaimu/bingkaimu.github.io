@@ -286,8 +286,7 @@ textarea {width: calc(100vw - 50px); display:block;}
 #menuposter {
 color:#FFFFFF; 
 left:0px;
-position: -webkit-sticky;
-position: sticky;
+position: fixed;
 top: 0px!important; 
 width: 100%; 
 text-align: left; 
