@@ -324,7 +324,9 @@ overflow: none!important;
 bottom: 0px!important;
 position: absolute;
 left: 0vw;
-bottom: 0vh;	
+bottom: 0vh;
+margin: 0px; 
+padding: 0px;	
 }
 
 iframe, html, body {
